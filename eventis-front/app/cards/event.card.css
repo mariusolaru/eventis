@@ -1,0 +1,9 @@
+.example-card {
+    width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://www.cora.ro/images/products/2541630/gallery/2541630_hd_1.jpg');
+    background-size: cover;
+  }
+  
