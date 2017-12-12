@@ -34,10 +34,11 @@ namespace UserList.API.Controllers
             var entry = Data.UserList.Create(userList.UserId , userList.Location, userList.Id, userList.FacebookId, userList.Name, 
                                         userList.Description, userList.StartTime, userList.EndTime, userList.ImageURL);
             _repository.Add(entry);
-            return Ok(entry);
+
+            return CreatedAtRoute("GetById", new { id = entry.Id }, entry);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "GetById")]
         public Data.UserList Get(String id)
         {
             return _repository.GetById(id);
