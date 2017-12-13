@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Domain", "Data.Domain\Data.Domain.csproj", "{6A43B664-DCBA-408E-A484-7B3558EE2D51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.Persistence", "Data.Persistence\Data.Persistence.csproj", "{06F2CF06-9C26-4FF9-A49B-B9835FBDF8D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{8C54CD41-DBB9-44C0-8A51-E2C37BDBF471}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacebookCrawler", "FacebookCrawler\FacebookCrawler.csproj", "{736BD0EB-8230-48F5-BB3B-8576457CB3EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsApi", "EventsApi\EventsApi.csproj", "{931A96B3-3134-4AD3-B00A-C1A08D40253E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsTests", "EventsTests\EventsTests.csproj", "{76A33144-8670-4B68-AB18-1EACA1D3D46D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A43B664-DCBA-408E-A484-7B3558EE2D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A43B664-DCBA-408E-A484-7B3558EE2D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A43B664-DCBA-408E-A484-7B3558EE2D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A43B664-DCBA-408E-A484-7B3558EE2D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06F2CF06-9C26-4FF9-A49B-B9835FBDF8D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06F2CF06-9C26-4FF9-A49B-B9835FBDF8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06F2CF06-9C26-4FF9-A49B-B9835FBDF8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06F2CF06-9C26-4FF9-A49B-B9835FBDF8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C54CD41-DBB9-44C0-8A51-E2C37BDBF471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C54CD41-DBB9-44C0-8A51-E2C37BDBF471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C54CD41-DBB9-44C0-8A51-E2C37BDBF471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C54CD41-DBB9-44C0-8A51-E2C37BDBF471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736BD0EB-8230-48F5-BB3B-8576457CB3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736BD0EB-8230-48F5-BB3B-8576457CB3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736BD0EB-8230-48F5-BB3B-8576457CB3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736BD0EB-8230-48F5-BB3B-8576457CB3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931A96B3-3134-4AD3-B00A-C1A08D40253E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931A96B3-3134-4AD3-B00A-C1A08D40253E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931A96B3-3134-4AD3-B00A-C1A08D40253E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931A96B3-3134-4AD3-B00A-C1A08D40253E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A33144-8670-4B68-AB18-1EACA1D3D46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A33144-8670-4B68-AB18-1EACA1D3D46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A33144-8670-4B68-AB18-1EACA1D3D46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A33144-8670-4B68-AB18-1EACA1D3D46D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DCFDC1A-0DDC-44F5-ACA5-7F0B1653EAB4}
+	EndGlobalSection
+EndGlobal
