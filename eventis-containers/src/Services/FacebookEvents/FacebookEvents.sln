@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Data", "01-Data", "{E6035577-9314-443F-B9AB-49A993242723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Business", "02-Business", "{74C7C2A9-1641-4518-923C-B9048BD1C1B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Presentation", "03-Presentation", "{C1814550-9CE1-4003-BC61-263B04DD424F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Domain", "Data.Domain\Data.Domain.csproj", "{A3482A96-268B-4B4C-84AF-4B6468979213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Persistence", "Data.Persistence\Data.Persistence.csproj", "{3B9DA28C-1FAE-4347-BEF0-98AD1B9C930F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{847E3BEE-84F3-4141-AAD3-CB7DA30ED7F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookCrawler", "FacebookCrawler\FacebookCrawler.csproj", "{A25A652A-AF0C-467C-A73C-932CFFE92057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookEvents.API", "FacebookEvents.API\FacebookEvents.API.csproj", "{41F76BAF-D2C8-4BE7-833F-AB5DE90D59F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Test", "04-Test", "{7AA9E7D5-D6A6-4317-B854-7A3935F6496A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3482A96-268B-4B4C-84AF-4B6468979213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3482A96-268B-4B4C-84AF-4B6468979213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3482A96-268B-4B4C-84AF-4B6468979213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3482A96-268B-4B4C-84AF-4B6468979213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9DA28C-1FAE-4347-BEF0-98AD1B9C930F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9DA28C-1FAE-4347-BEF0-98AD1B9C930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9DA28C-1FAE-4347-BEF0-98AD1B9C930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9DA28C-1FAE-4347-BEF0-98AD1B9C930F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847E3BEE-84F3-4141-AAD3-CB7DA30ED7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847E3BEE-84F3-4141-AAD3-CB7DA30ED7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847E3BEE-84F3-4141-AAD3-CB7DA30ED7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847E3BEE-84F3-4141-AAD3-CB7DA30ED7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25A652A-AF0C-467C-A73C-932CFFE92057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25A652A-AF0C-467C-A73C-932CFFE92057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25A652A-AF0C-467C-A73C-932CFFE92057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25A652A-AF0C-467C-A73C-932CFFE92057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F76BAF-D2C8-4BE7-833F-AB5DE90D59F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F76BAF-D2C8-4BE7-833F-AB5DE90D59F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F76BAF-D2C8-4BE7-833F-AB5DE90D59F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F76BAF-D2C8-4BE7-833F-AB5DE90D59F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3482A96-268B-4B4C-84AF-4B6468979213} = {E6035577-9314-443F-B9AB-49A993242723}
+		{3B9DA28C-1FAE-4347-BEF0-98AD1B9C930F} = {E6035577-9314-443F-B9AB-49A993242723}
+		{847E3BEE-84F3-4141-AAD3-CB7DA30ED7F9} = {74C7C2A9-1641-4518-923C-B9048BD1C1B3}
+		{A25A652A-AF0C-467C-A73C-932CFFE92057} = {74C7C2A9-1641-4518-923C-B9048BD1C1B3}
+		{41F76BAF-D2C8-4BE7-833F-AB5DE90D59F4} = {C1814550-9CE1-4003-BC61-263B04DD424F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5247A58C-8A24-4656-9A7C-6955E6223A67}
+	EndGlobalSection
+EndGlobal
