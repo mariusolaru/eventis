@@ -180,13 +180,11 @@
         "ExceptionsAllowedBeforeBreaking": 3,
         "DurationOfBreak": 10,
         "TimeoutValue": 5000
-      }
-    },
-
-    "GlobalConfiguration",
-    {
+       }
+     }
+    ],
+    "GlobalConfiguration": {
       "RequestIdKey": "OcRequestId",
       "AdministrationPath": "/administration"
     }
-  ]
 }
