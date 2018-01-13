@@ -19,21 +19,28 @@ namespace Data.Domain
         public DateTime EndTime { get; private set; }
         public string ImageURL { get; private set; }
 
-        public static UserList Create(Guid userId, string location, string id, string facebookId, string name,
+        public static UserList Create(string location, string id, string facebookId, string name,
             string description, DateTime startTime, DateTime endTime, string imageURL)
         {
-            var instance = new UserList();
-
-            instance.Update(userId, location, id, facebookId, name, description,
-                startTime, endTime, imageURL);
+            var instance = new UserList
+            {
+                UserId = Guid.NewGuid(),
+                Location = location,
+                Id = id , 
+                FacebookId = facebookId ,
+                Name = name , 
+                Description = description ,
+                StartTime = startTime , 
+                EndTime = endTime , 
+                ImageURL = imageURL
+            };
 
             return instance;
         }
 
-        public void Update(Guid userId, string location, string id, string facebookId, string name,
+        public void Update(string location, string id, string facebookId, string name,
             string description, DateTime startTime, DateTime endTime, string imageURL)
         {
-            this.UserId = userId;
             this.Location = location;
             this.Id = id;
             this.FacebookId = facebookId;

@@ -4,7 +4,6 @@ namespace UserManagement.API.Models
 {
     public class UserListModel
     {
-        public Guid UserId { get; set; }
         public string Location { get; set; }
         public string Id { get; set; }
         public string FacebookId { get; set; }
