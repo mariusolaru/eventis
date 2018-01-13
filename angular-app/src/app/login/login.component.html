@@ -1,0 +1,37 @@
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile>
+    <img src="assets/images/palas.jpg">
+  </mat-grid-tile>
+  <mat-grid-tile>
+  <form [formGroup]="loginForm">
+    <mat-card-title >Log in to your EventIS account</mat-card-title>
+    <br>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Email" formControlName="emailControl">
+      <mat-error *ngIf="loginForm.controls['emailControl'].errors?.required && loginForm.controls['emailControl'].touched">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="password" placeholder="Password" formControlName="passwordControl">
+      <mat-error *ngIf="loginForm.controls['passwordControl'].errors?.required && loginForm.controls['passwordControl'].touched">
+        Password is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button type="submit" [disabled]="!loginForm.valid">
+      Login
+    </button>
+    <br>
+    <p>Don't have an acount?</p>
+
+    <a routerLink="/register" routerLinkActive="active">Register</a>
+
+  </form>
+  </mat-grid-tile>
+</mat-grid-list>
+<!--
+<p>Form value: {{ loginForm.value | json }}</p>
+<p>Valid : {{loginForm.valid}} </p>
+-->

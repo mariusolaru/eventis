@@ -1,0 +1,24 @@
+form {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form .mat-form-field {
+    width: 100%;
+  }
+
+form .mat-raised-button {
+  color: white;
+  background: #3f51b5;
+  width: 50%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p{
+  color: #919191;
+}

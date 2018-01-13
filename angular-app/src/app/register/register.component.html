@@ -1,0 +1,86 @@
+
+<!--<h2 class="section-title"> Register </h2>
+<div>
+  <form>
+
+    <mat-input-container class="input-container">
+      <input matInput type="text" placeholder="Username">
+    </mat-input-container>
+
+    <mat-input-container class="input-container">
+      <input matInput type="email" placeholder="Email">
+    </mat-input-container>
+
+    <mat-input-container class="input-container">
+      <input matInput type="password" placeholder="Password">
+    </mat-input-container>
+
+    <mat-input-container class="input-container">
+      <input matInput type="password" placeholder="Repeat-Password">
+    </mat-input-container>
+
+    <button mat-raised-button type="submit">
+      Login
+    </button>
+
+  </form>
+
+
+</div>
+
+-->
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile><img src="assets/images/palas.jpg"></mat-grid-tile>
+  <mat-grid-tile>
+  <form [formGroup]="registerForm">
+    <mat-card-title>Create an EventIS account</mat-card-title>
+    <br>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Username" formControlName="usernameControl">
+      <mat-error *ngIf="registerForm.controls['usernameControl'].errors?.required && registerForm.controls['usernameControl'].touched">
+        Username is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="text" placeholder="Email" formControlName="emailControl">
+      <mat-error *ngIf="registerForm.controls['emailControl'].errors?.required && registerForm.controls['emailControl'].touched">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="password" placeholder="Password" formControlName="passwordControl">
+      <mat-error *ngIf="registerForm.controls['passwordControl'].errors?.required && registerForm.controls['passwordControl'].touched">
+        Password is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="password" placeholder="Repeat Password" formControlName="repeatPasswordControl">
+      <mat-error *ngIf="registerForm.controls['repeatPasswordControl'].errors?.required && registerForm.controls['repeatPasswordControl'].touched">
+        Repeat Password is <strong> required </strong>
+      </mat-error>
+
+      <mat-error *ngIf="!registerForm.controls['repeatPasswordControl'].errors?.MatchPassword">
+        <strong> Passwords do not match </strong>
+      </mat-error>
+
+    </mat-form-field>
+
+    <button mat-raised-button type="submit" [disabled]="!registerForm.valid">
+      Register
+    </button>
+    <br>
+    <p>Already have an acount?</p>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
+
+  </form></mat-grid-tile>
+
+</mat-grid-list>
+
+<!--
+<p>Form value: {{ registerForm.value | json }}</p>
+<p>Valid : {{registerForm.valid}} </p>
+<p>Password : {{ registerForm.controls['password'] }} </p>
+-->
