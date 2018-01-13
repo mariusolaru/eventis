@@ -12728,11 +12728,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Work\\Projects\\AuthAPI\\WebApi.csproj",
+      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\AuthAPI\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "D:\\Work\\Projects\\AuthAPI\\WebApi.csproj",
+      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\AuthAPI\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\Projects\\AuthAPI\\obj\\",
+      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\AuthAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
