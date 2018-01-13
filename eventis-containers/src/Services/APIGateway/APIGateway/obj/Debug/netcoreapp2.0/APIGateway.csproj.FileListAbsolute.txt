@@ -1,0 +1,12 @@
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\bin\Debug\netcoreapp2.0\configuration.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\bin\Debug\netcoreapp2.0\APIGateway.deps.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\bin\Debug\netcoreapp2.0\APIGateway.runtimeconfig.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\bin\Debug\netcoreapp2.0\APIGateway.runtimeconfig.dev.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\bin\Debug\netcoreapp2.0\APIGateway.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\bin\Debug\netcoreapp2.0\APIGateway.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\obj\Debug\netcoreapp2.0\APIGateway.csprojResolveAssemblyReference.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\obj\Debug\netcoreapp2.0\APIGateway.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\obj\Debug\netcoreapp2.0\APIGateway.AssemblyInfoInputs.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\obj\Debug\netcoreapp2.0\APIGateway.AssemblyInfo.cs
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\obj\Debug\netcoreapp2.0\APIGateway.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\APIGateway\APIGateway\obj\Debug\netcoreapp2.0\APIGateway.pdb
