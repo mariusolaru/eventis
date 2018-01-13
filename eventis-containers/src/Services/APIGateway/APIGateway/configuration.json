@@ -1,71 +1,110 @@
 ﻿{
-    "ReRoutes": [
-      {
-            "DownstreamPathTemplate": "/api/UsersList",
-            "DownstreamScheme": "http",
-            "DownstreamHost": "localhost",
-            "DownstreamPort": 50744,
-            "UpstreamPathTemplate": "/UsersList",
-            "UpstreamHttpMethod": [ "Get" ],
-            "QoSOptions": {
-              "ExceptionsAllowedBeforeBreaking": 3,
-              "DurationOfBreak": 10,
-              "TimeoutValue": 5000
-            }
-      },
-        {
-            "DownstreamPathTemplate": "/api/UsersList/{id}",
-            "DownstreamScheme": "http",
-            "DownstreamHost": "localhost",
-            "DownstreamPort": 50744,
-            "UpstreamPathTemplate": "/UsersList/{id}",
-            "UpstreamHttpMethod": [ "Get" ],
-            "QoSOptions": {
-                "ExceptionsAllowedBeforeBreaking": 3,
-                "DurationOfBreak": 10,
-                "TimeoutValue": 5000
-            }
-        },
-      {
-        "DownstreamPathTemplate": "/api/UsersList",
-        "DownstreamScheme": "http",
-        "DownstreamHost": "localhost",
-        "DownstreamPort": 50744,
-        "UpstreamPathTemplate": "/UsersList",
-        "UpstreamHttpMethod": [ "Post" ],
-        "QoSOptions": {
-          "ExceptionsAllowedBeforeBreaking": 3,
-          "DurationOfBreak": 10,
-          "TimeoutValue": 5000
-        }
-      },
-      {
-        "DownstreamPathTemplate": "/api/UsersList/{id}",
-        "DownstreamScheme": "http",
-        "DownstreamHost": "localhost",
-        "DownstreamPort": 50744,
-        "UpstreamPathTemplate": "/UsersList/{id}",
-        "UpstreamHttpMethod": [ "Put" ],
-        "QoSOptions": {
-          "ExceptionsAllowedBeforeBreaking": 3,
-          "DurationOfBreak": 10,
-          "TimeoutValue": 5000
-        }
-      },
-      {
-        "DownstreamPathTemplate": "/api/UsersList/{id}",
-        "DownstreamScheme": "http",
-        "DownstreamHost": "localhost",
-        "DownstreamPort": 50744,
-        "UpstreamPathTemplate": "/UsersList/{id}",
-        "UpstreamHttpMethod": [ "Delete" ],
-        "QoSOptions": {
-          "ExceptionsAllowedBeforeBreaking": 3,
-          "DurationOfBreak": 10,
-          "TimeoutValue": 5000
-        }
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/UsersList",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 50744,
+      "UpstreamPathTemplate": "/UsersList",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
       }
-    ],
+    },
+    {
+      "DownstreamPathTemplate": "/api/UsersList/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 50744,
+      "UpstreamPathTemplate": "/UsersList/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/UsersList",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 50744,
+      "UpstreamPathTemplate": "/UsersList",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/UsersList/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 50744,
+      "UpstreamPathTemplate": "/UsersList/{id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/UsersList/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 50744,
+      "UpstreamPathTemplate": "/UsersList/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/fbEvents",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 5000,
+      "UpstreamPathTemplate": "/fbEvents",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/fbEvents/{dateTime}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 5000,
+      "UpstreamPathTemplate": "/fbEvents/{dateTime}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/fbEvents/update",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 5000,
+      "UpstreamPathTemplate": "/fbEvents/update",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    }
+  ],
     "GlobalConfiguration": {
         "RequestIdKey": "OcRequestId",
         "AdministrationPath": "/administration"

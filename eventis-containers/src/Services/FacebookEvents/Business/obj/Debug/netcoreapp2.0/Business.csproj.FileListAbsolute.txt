@@ -1,0 +1,15 @@
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\Business.deps.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\Business.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\Business.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\Data.Domain.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\Data.Persistence.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\FacebookCrawler.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\Data.Domain.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\Data.Persistence.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\bin\Debug\netcoreapp2.0\FacebookCrawler.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\obj\Debug\netcoreapp2.0\Business.csprojResolveAssemblyReference.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\obj\Debug\netcoreapp2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfoInputs.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\obj\Debug\netcoreapp2.0\Business.AssemblyInfo.cs
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\obj\Debug\netcoreapp2.0\Business.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\FacebookEvents\Business\obj\Debug\netcoreapp2.0\Business.pdb

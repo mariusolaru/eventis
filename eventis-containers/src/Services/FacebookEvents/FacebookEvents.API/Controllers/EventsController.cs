@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FacebookEvents.API.Controllers
 {
-    [Route("v1/events")]
+    [Route("api/fbEvents")]
     public class EventsController : Controller
     {
         private readonly IEventRepository _repository;
@@ -24,9 +24,15 @@ namespace FacebookEvents.API.Controllers
         }
 
         [HttpGet("{dateTime}")]
-        public IEnumerable<Event> GetAllEventsUntill(Int64 dateTime)
+        public IEnumerable<Event> GetAllEventsUntill(DateTime dateTime)
         {
-            return _repository.GetEventsUntill(new DateTime(dateTime));
+            return _repository.GetEventsUntill(dateTime);
+        }
+
+        [HttpGet("update")]
+        public void GetEventsFromFacebok()
+        {
+            _repository.AddAllEventsFromFacebook();
         }
     }
 }

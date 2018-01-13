@@ -12884,9 +12884,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\APIGateway\\APIGateway\\APIGateway.csproj",
       "projectName": "APIGateway",
@@ -12922,10 +12919,6 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Ocelot": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -12934,6 +12927,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
+          },
+          "Ocelot": {
+            "target": "Package",
+            "version": "2.0.1"
           }
         },
         "imports": [
