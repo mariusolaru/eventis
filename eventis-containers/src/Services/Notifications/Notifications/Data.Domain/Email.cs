@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.IO;
 using System.Net;
+using System.Reflection;
 using System.Text;
 
 namespace Data.Domain
@@ -21,7 +23,7 @@ namespace Data.Domain
 
         public const string FromName = "EventIS Team";
 
-        public static string WelcomeHtmlBody = System.IO.File.ReadAllText(@"C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Data.Domain\Resources\WelcomeHTMLTemplate.txt");
+        public static string WelcomeHtmlBody = System.IO.File.ReadAllText(GetWelcomeHtmlTemplatePath());
 
         public string To { get; set; }
 
@@ -45,5 +47,16 @@ namespace Data.Domain
                 }
             }
         }
+
+        public static string GetWelcomeHtmlTemplatePath()
+        {
+            var assemblyPath = new Uri(Assembly.GetExecutingAssembly().CodeBase).LocalPath;
+            var directoryPath = Path.GetDirectoryName(assemblyPath);
+
+            var filePath = Path.Combine(directoryPath, @"..\..\..\..\Data.Domain\Resources\WelcomeHTMLTemplate.txt");
+            
+            return filePath;
+
+        }   
     }
 }

@@ -2798,6 +2798,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj",
       "projectName": "Business",
