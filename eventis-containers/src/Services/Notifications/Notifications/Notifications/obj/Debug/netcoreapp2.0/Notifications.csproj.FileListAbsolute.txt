@@ -1,0 +1,13 @@
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\bin\Debug\netcoreapp2.0\Notifications.deps.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\bin\Debug\netcoreapp2.0\Notifications.runtimeconfig.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\bin\Debug\netcoreapp2.0\Notifications.runtimeconfig.dev.json
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\bin\Debug\netcoreapp2.0\Notifications.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\obj\Debug\netcoreapp2.0\Notifications.csprojResolveAssemblyReference.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\obj\Debug\netcoreapp2.0\Notifications.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\obj\Debug\netcoreapp2.0\Notifications.AssemblyInfoInputs.cache
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\obj\Debug\netcoreapp2.0\Notifications.AssemblyInfo.cs
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\bin\Debug\netcoreapp2.0\Notifications.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\bin\Debug\netcoreapp2.0\Data.Domain.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\bin\Debug\netcoreapp2.0\Data.Domain.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\obj\Debug\netcoreapp2.0\Notifications.dll
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Notifications\obj\Debug\netcoreapp2.0\Notifications.pdb
