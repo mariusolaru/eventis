@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace WebApi.Controllers
 {
     [Authorize]
-    [Route("[controller]")]
+    [Route("[api/userslog]")]
     public class UsersController : Controller
     {
         private IUserService _userService;
