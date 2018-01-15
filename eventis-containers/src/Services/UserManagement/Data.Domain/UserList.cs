@@ -8,47 +8,42 @@ namespace Data.Domain
         {
 
         }
-
-        public Guid UserId { get; private set; }
+        
+        public string Id { get; set; }
+        public string UserEmail { get; set; }
         public string Location { get; private set; }
-        public string Id { get; private set; }
-        public string FacebookId { get; private set; }
         public string Name { get; private set; }
         public string Description { get; private set; }
         public DateTime StartTime { get; private set; }
         public DateTime EndTime { get; private set; }
-        public string ImageURL { get; private set; }
 
-        public static UserList Create(string location, string id, string facebookId, string name,
-            string description, DateTime startTime, DateTime endTime, string imageURL)
+        public static UserList Create(string facebookId , string userEmail , string location, string name,
+            string description, DateTime startTime, DateTime endTime)
         {
             var instance = new UserList
-            {
-                UserId = Guid.NewGuid(),
+            {   
+                Id = facebookId,
+                UserEmail = userEmail,
                 Location = location,
-                Id = id , 
-                FacebookId = facebookId ,
-                Name = name , 
+                Name = name, 
                 Description = description ,
                 StartTime = startTime , 
-                EndTime = endTime , 
-                ImageURL = imageURL
+                EndTime = endTime
             };
 
             return instance;
         }
 
-        public void Update(string location, string id, string facebookId, string name,
-            string description, DateTime startTime, DateTime endTime, string imageURL)
+        public void Update(string facebookId , string userEmail, string location, string name,
+            string description, DateTime startTime, DateTime endTime)
         {
+            this.Id = facebookId;
+            this.UserEmail = userEmail;
             this.Location = location;
-            this.Id = id;
-            this.FacebookId = facebookId;
             this.Name = name;
             this.Description = description;
             this.StartTime = startTime;
             this.EndTime = endTime;
-            this.ImageURL = imageURL;
         }
 
     }
