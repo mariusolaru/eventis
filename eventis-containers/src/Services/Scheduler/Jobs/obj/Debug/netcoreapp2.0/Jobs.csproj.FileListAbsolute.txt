@@ -1,0 +1,11 @@
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\bin\Debug\netcoreapp2.0\Jobs.deps.json
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\bin\Debug\netcoreapp2.0\Jobs.runtimeconfig.json
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\bin\Debug\netcoreapp2.0\Jobs.runtimeconfig.dev.json
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\bin\Debug\netcoreapp2.0\Jobs.dll
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\bin\Debug\netcoreapp2.0\Jobs.pdb
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\obj\Debug\netcoreapp2.0\Jobs.csprojResolveAssemblyReference.cache
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\obj\Debug\netcoreapp2.0\Jobs.csproj.CoreCompileInputs.cache
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\obj\Debug\netcoreapp2.0\Jobs.AssemblyInfoInputs.cache
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\obj\Debug\netcoreapp2.0\Jobs.AssemblyInfo.cs
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\obj\Debug\netcoreapp2.0\Jobs.dll
+C:\Users\Razvan Romanescu\source\repos\Scheduler\Jobs\obj\Debug\netcoreapp2.0\Jobs.pdb
