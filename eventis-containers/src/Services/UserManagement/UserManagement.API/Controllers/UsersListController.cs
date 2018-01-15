@@ -6,7 +6,7 @@ using UserManagement.API.Models;
 
 namespace UserManagement.API.Controllers
 {
-    [Route("api/UsersList")]
+    [Route("api/userslist")]
     public class UsersListController : Controller
     {
         private IUserListRepository _repository;
@@ -29,25 +29,32 @@ namespace UserManagement.API.Controllers
             {
                 return BadRequest();
             }
-            var entry = Data.Domain.UserList.Create(userList.Location, userList.Id, userList.FacebookId, userList.Name,
-                userList.Description, userList.StartTime, userList.EndTime, userList.ImageURL);
+            var entry = Data.Domain.UserList.Create(userList.Id , userList.UserEmail, userList.Location, userList.Name,
+                userList.Description, userList.StartTime, userList.EndTime);
             _repository.Add(entry);
 
-            return CreatedAtRoute("GetById", new { id = entry.Id }, entry);
+            return CreatedAtRoute("GetById", new { Id = entry.Id }, entry);
         }
 
         [HttpGet("{id}", Name = "GetById")]
-        public Data.Domain.UserList Get(String id)
+        public Data.Domain.UserList GetById(String id)
         {
             return _repository.GetById(id);
         }
+
+        [HttpGet("todaysevents")]
+        public IEnumerable<Data.Domain.UserList> GetAllEventsFromToday()
+        {
+            return _repository.GetAllEventsFromToday();
+        }
+             
 
         [HttpPut("{id}")]
         public void Put(String id, [FromBody]UserListModel userList)
         {
             var entity = _repository.GetById(id);
-            entity.Update(userList.Location, userList.Id, userList.FacebookId, userList.Name,
-                userList.Description, userList.StartTime, userList.EndTime, userList.ImageURL);
+            entity.Update(userList.Id , userList.UserEmail , userList.Location , userList.Name,
+                userList.Description, userList.StartTime, userList.EndTime);
 
             _repository.Edit(entity);
         }

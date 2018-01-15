@@ -8,6 +8,7 @@ namespace Business
     {
         void Add(UserList userList);
         IReadOnlyList<UserList> GetAll();
+        IReadOnlyList<UserList> GetAllEventsFromToday();
         UserList GetById(String id);
         void Edit(UserList userList);
         void Delete(String id);

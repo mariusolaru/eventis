@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Data.Domain;
 using Data.Persistence;
@@ -25,9 +26,14 @@ namespace Business
             return _service.UsersList.ToList();
         }
 
-        public UserList GetById(string id)
+        public UserList GetById(string facebookId)
         {
-            return _service.UsersList.FirstOrDefault(c => c.Id == id);
+            return _service.UsersList.FirstOrDefault(c => c.Id == facebookId);
+        }
+
+        public IReadOnlyList<UserList> GetAllEventsFromToday()
+        {
+            return _service.UsersList.Where(c => c.StartTime.Date == DateTime.Today.Date).ToList();
         }
 
         public void Edit(UserList userList)
