@@ -1,11 +1,11 @@
 ﻿{
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/api/UsersList",
+      "DownstreamPathTemplate": "/api/userslist",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 50744,
-      "UpstreamPathTemplate": "/UsersList",
+      "UpstreamPathTemplate": "/userslist",
       "UpstreamHttpMethod": [ "Get" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
@@ -14,11 +14,11 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/UsersList/{id}",
+      "DownstreamPathTemplate": "/api/userslist/todaysevents",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 50744,
-      "UpstreamPathTemplate": "/UsersList/{id}",
+      "UpstreamPathTemplate": "/userslist/todaysevents",
       "UpstreamHttpMethod": [ "Get" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
@@ -27,11 +27,24 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/UsersList",
+      "DownstreamPathTemplate": "/api/userslist/{id}",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 50744,
-      "UpstreamPathTemplate": "/UsersList",
+      "UpstreamPathTemplate": "/userslist/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/userslist",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 50744,
+      "UpstreamPathTemplate": "/userslist",
       "UpstreamHttpMethod": [ "Post" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
@@ -40,11 +53,11 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/UsersList/{id}",
+      "DownstreamPathTemplate": "/api/userslist/{id}",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 50744,
-      "UpstreamPathTemplate": "/UsersList/{id}",
+      "UpstreamPathTemplate": "/userslist/{id}",
       "UpstreamHttpMethod": [ "Put" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
@@ -53,11 +66,11 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/UsersList/{id}",
+      "DownstreamPathTemplate": "/api/userslist/{id}",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 50744,
-      "UpstreamPathTemplate": "/UsersList/{id}",
+      "UpstreamPathTemplate": "/userslist/{id}",
       "UpstreamHttpMethod": [ "Delete" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
