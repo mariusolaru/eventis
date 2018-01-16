@@ -7,8 +7,6 @@ namespace Notifications.Models
 {
     public class EmailAttrModel
     {   
-        public string Username { get; set; }
-
         public string To { get; set; }
     }
 }
