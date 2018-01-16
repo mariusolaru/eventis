@@ -6,6 +6,9 @@ using Business;
 using Data.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +30,20 @@ namespace FacebookEvents.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
+
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddScoped<IUrlHelper>(factory =>
+            {
+                var actionContext = factory.GetService<IActionContextAccessor>()
+                    .ActionContext;
+                return new UrlHelper(actionContext);
+            });
             services.AddTransient<IDatabaseContext, DatabaseContext>();
             services.AddTransient<IEventRepository, EventRepository>();
 
@@ -41,6 +58,7 @@ namespace FacebookEvents.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseCors("MyPolicy");
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
