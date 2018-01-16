@@ -1,0 +1,47 @@
+<div id="left">
+  <h2> My Events List </h2>
+    <div style="overflow-y:scroll; overflow-x:hidden; height:452px; margin-bottom: 15px;">
+    <mat-grid-list cols="1" rowHeight="200px" rowWidth="400px">
+
+      <mat-grid-tile *ngFor="let event of events" [colspan]="1" [rowspan]="1">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title> Ana are mere </mat-card-title>
+            <mat-card-subtitle> adasda </mat-card-subtitle>
+
+            <div class="actions">
+                <button mat-raised-button color="primary" (click)="updateEvent()"> Update </button>
+                <button mat-raised-button color="warn"> Delete </button>
+            </div>
+          </mat-card-header>
+          <mat-card-content>
+            <p> Maria </p>
+          </mat-card-content>
+
+        </mat-card>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+  </div>
+</div>
+
+<div id="right">
+
+  <button mat-raised-button color="primary" (click)="createEvent()"> Create Event </button>
+  <div *ngIf="showCreateEvent">
+
+    <app-create-event class="formular" [title]="childTitle"> </app-create-event>
+
+  </div>
+
+  <div *ngIf="showUpdateEvent">
+
+    <app-create-event class="formular" [title]="childTitle"> </app-create-event>
+
+  </div>
+
+<!--  <app-create-event> </app-create-event> -->
+
+</div>

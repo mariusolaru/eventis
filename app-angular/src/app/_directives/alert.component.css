@@ -1,0 +1,15 @@
+.alert-success {
+  background: green;
+  color: WHITE;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background: FIREBRICK;
+  color: WHITE;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
