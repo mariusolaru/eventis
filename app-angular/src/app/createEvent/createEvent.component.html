@@ -1,0 +1,26 @@
+
+<form [formGroup]="createEventForm" style="width: 100%;">
+  <mat-card-title> {{title}} </mat-card-title>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Enter a name" formControlName="nameControl">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Enter a description" formControlName="descriptionControl">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Enter a location" formControlName="locationControl">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dateControl">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <br>
+  <button mat-raised-button type="submit" >
+    Create
+  </button>
+</form>

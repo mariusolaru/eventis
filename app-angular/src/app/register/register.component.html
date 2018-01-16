@@ -1,0 +1,73 @@
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile><img src="assets/images/palas.jpg"></mat-grid-tile>
+  <mat-grid-tile>
+    <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()">
+      <mat-card-title>Create an EventIS account</mat-card-title>
+      <alert> </alert>
+
+      <br>
+
+      <mat-form-field>
+        <input matInput type="text" placeholder="First Name" formControlName="firstNameControl">
+        <mat-error *ngIf="registerForm.controls['firstNameControl'].errors?.required && registerForm.controls['firstNameControl'].touched">
+          First Name is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" placeholder="Last Name" formControlName="lastNameControl">
+        <mat-error *ngIf="registerForm.controls['lastNameControl'].errors?.required && registerForm.controls['lastNameControl'].touched">
+          Last Name is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+
+      <mat-form-field>
+        <input matInput type="text" placeholder="Email" formControlName="emailControl">
+        <mat-error *ngIf="registerForm.controls['emailControl'].errors?.required && registerForm.controls['emailControl'].touched">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" placeholder="Phone Number" formControlName="phoneNumberControl">
+        <mat-error *ngIf="registerForm.controls['phoneNumberControl'].errors?.required && registerForm.controls['phoneNumberControl'].touched">
+          Phone Number is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" formControlName="passwordControl">
+        <mat-error *ngIf="registerForm.controls['passwordControl'].errors?.required && registerForm.controls['passwordControl'].touched">
+          Password is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="password" placeholder="Repeat Password" formControlName="repeatPasswordControl">
+        <mat-error *ngIf="registerForm.controls['repeatPasswordControl'].errors?.required && registerForm.controls['repeatPasswordControl'].touched">
+          Repeat Password is <strong> required </strong>
+        </mat-error>
+
+        <mat-error *ngIf="!registerForm.controls['repeatPasswordControl'].errors?.MatchPassword">
+          <strong> Passwords do not match </strong>
+        </mat-error>
+
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" [disabled]="!registerForm.valid">
+        Register
+      </button>
+
+      <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+
+
+      <br>
+      <p>Already have an acount?</p>
+      <a routerLink="/login" routerLinkActive="active">Login</a>
+
+    </form>
+  </mat-grid-tile>
+
+</mat-grid-list>
