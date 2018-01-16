@@ -11,7 +11,7 @@
     <p><a [routerLink]="['/login']">Logout</a></p>
 </div>
 -->
-
+<app-navbar></app-navbar>
 <div>
 <mat-grid-list cols="4" rowHeight="500px">
   <mat-grid-tile *ngFor="let event of events" [colspan]="width" [rowspan]="height">
@@ -31,7 +31,7 @@
     </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
-<div>
+</div>
 
 
 <mat-paginator [length]="length"
@@ -39,3 +39,5 @@
               [pageSizeOptions]="pageSizeOptions"
               (page)="pageEvent = getServerData($event)">
 </mat-paginator>
+
+<app-footer></app-footer>

@@ -3,9 +3,12 @@
     <span><img src="assets/images/logo.png"></span><span>EventIS</span>
 
     <span class="example-spacer"></span>
-    <button mat-button>All Events</button>
-    <button mat-button>My Events</button>
-    <button mat-button>My Account</button>
-    <button mat-button>Log Out</button>
+    <a routerLink="/events" routerLinkActive="active">
+      <button mat-raised-button class="button-page" color="primary">All Events</button></a>
+    <a routerLink="/myevents" routerLinkActive="active">
+      <button mat-raised-button class="button-page" color="primary">My Events</button></a>
+    <a routerLink="/home" routerLinkActive="active">
+      <button mat-raised-button class="button-page" color="primary">Log Out</button></a>
+
   </mat-toolbar-row>
 </mat-toolbar>

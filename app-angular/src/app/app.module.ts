@@ -31,6 +31,7 @@ import { MyEventsComponent } from './myEvents/myEvents.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { HomeScreenComponent } from './home-screen/home-screen.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { MaterialModule } from './material.module';
         NotfoundComponent,
         CreateEventComponent,
         EventDetailsComponent,
-        MyEventsComponent
+        MyEventsComponent,
+        HomeScreenComponent
     ],
     providers: [
         EventService,
