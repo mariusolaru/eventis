@@ -6,3 +6,4 @@ C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\s
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.AssemblyInfo.cs
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.dll
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.pdb
+C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\Notifications\Notifications\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.csprojResolveAssemblyReference.cache

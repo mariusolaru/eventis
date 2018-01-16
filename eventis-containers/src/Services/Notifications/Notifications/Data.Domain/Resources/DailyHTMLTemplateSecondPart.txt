@@ -1,0 +1,19 @@
+ </div><!-- news-grid -->
+      <br />
+      <hr class="separator" />
+    </section><!-- other posts -->
+    
+    <button class="cta-btn">
+      <b>Go to EventIS</b>
+    </button>
+    
+   
+    
+    <footer class="main-ftr">
+      <p class="footer-txt"></p><!-- footer final text -->
+      <div class="social"></div><!-- social network links -->
+    </footer><!-- main footer -->
+    
+  </div><!-- main container -->
+</body>
+</html>

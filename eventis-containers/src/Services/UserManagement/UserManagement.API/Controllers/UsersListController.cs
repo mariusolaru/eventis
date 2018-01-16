@@ -30,7 +30,7 @@ namespace UserManagement.API.Controllers
                 return BadRequest();
             }
             var entry = Data.Domain.UserList.Create(userList.Id , userList.UserEmail, userList.Location, userList.Name,
-                userList.Description, userList.StartTime, userList.EndTime);
+                userList.Description, userList.ImageUrl, userList.StartTime, userList.EndTime);
             _repository.Add(entry);
 
             return CreatedAtRoute("GetById", new { Id = entry.Id }, entry);
@@ -48,13 +48,12 @@ namespace UserManagement.API.Controllers
             return _repository.GetAllEventsFromToday();
         }
              
-
         [HttpPut("{id}")]
         public void Put(String id, [FromBody]UserListModel userList)
         {
             var entity = _repository.GetById(id);
             entity.Update(userList.Id , userList.UserEmail , userList.Location , userList.Name,
-                userList.Description, userList.StartTime, userList.EndTime);
+                userList.Description, userList.ImageUrl , userList.StartTime, userList.EndTime);
 
             _repository.Edit(entity);
         }

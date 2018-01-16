@@ -14,11 +14,12 @@ namespace Data.Domain
         public string Location { get; private set; }
         public string Name { get; private set; }
         public string Description { get; private set; }
+        public string ImageUrl { get; private set; }
         public DateTime StartTime { get; private set; }
         public DateTime EndTime { get; private set; }
 
         public static UserList Create(string facebookId , string userEmail , string location, string name,
-            string description, DateTime startTime, DateTime endTime)
+            string description, string imageUrl , DateTime startTime, DateTime endTime)
         {
             var instance = new UserList
             {   
@@ -27,6 +28,7 @@ namespace Data.Domain
                 Location = location,
                 Name = name, 
                 Description = description ,
+                ImageUrl = imageUrl,
                 StartTime = startTime , 
                 EndTime = endTime
             };
@@ -35,13 +37,14 @@ namespace Data.Domain
         }
 
         public void Update(string facebookId , string userEmail, string location, string name,
-            string description, DateTime startTime, DateTime endTime)
+            string description, string imageUrl , DateTime startTime, DateTime endTime)
         {
             this.Id = facebookId;
             this.UserEmail = userEmail;
             this.Location = location;
             this.Name = name;
             this.Description = description;
+            this.ImageUrl = imageUrl;
             this.StartTime = startTime;
             this.EndTime = endTime;
         }

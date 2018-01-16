@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
@@ -24,6 +25,12 @@ namespace Data.Domain
         public const string FromName = "EventIS Team";
 
         public static string WelcomeHtmlBody = System.IO.File.ReadAllText(GetWelcomeHtmlTemplatePath());
+
+        public static string DailyMailHtmlBodyFirstPart =
+            System.IO.File.ReadAllText(GetDailyEmailHtmlTemplateFirstPartPath());
+
+        public static string DailyMailHtmlBodySecondPart =
+            System.IO.File.ReadAllText(GetDailyEmailHtmlTemplateSecondPartPath());
 
         public string To { get; set; }
 
@@ -57,6 +64,47 @@ namespace Data.Domain
             
             return filePath;
 
-        }   
+        }
+
+        public static string GetDailyEmailHtmlTemplateFirstPartPath()
+        {
+            var assemblyPath = new Uri(Assembly.GetExecutingAssembly().CodeBase).LocalPath;
+            var directoryPath = Path.GetDirectoryName(assemblyPath);
+
+            var filePath = Path.Combine(directoryPath, @"..\..\..\..\Data.Domain\Resources\DailyHTMLTemplateFirstPart.txt");
+
+            return filePath;
+        }
+
+        public static string GetDailyEmailHtmlTemplateSecondPartPath()
+        {
+            var assemblyPath = new Uri(Assembly.GetExecutingAssembly().CodeBase).LocalPath;
+            var directoryPath = Path.GetDirectoryName(assemblyPath);
+
+            var filePath = Path.Combine(directoryPath, @"..\..\..\..\Data.Domain\Resources\DailyHTMLTemplateSecondPart.txt");
+
+            return filePath;
+        }
+
+        public static string CreateDailyMailHtmlComponent(string eventName, string eventLocation, string imageUrl , string startTime, string endTime)
+        {
+            string htmlComponent = "";
+
+            htmlComponent += "<div class=\"grid-grid\">";
+            htmlComponent += "<div class=\"grid-news-img\">";
+            htmlComponent += "<img src=\"" + imageUrl + "\" alt = \"\" /> ";
+            htmlComponent += "</div>";
+            htmlComponent += "<div class=\"grid-news-txt\">";
+            htmlComponent += "<p>" + eventName + "</p>";
+            htmlComponent += "<p>" + eventLocation + "</p>";
+            htmlComponent += "<a class=\"news-link\">" + startTime.Substring(11,5) + " - " + endTime.Substring(11,5) + "</a >";
+            htmlComponent += "</div>";
+            htmlComponent += "</div>";
+
+            return htmlComponent;
+
+        }
+
+
     }
 }
