@@ -7,9 +7,11 @@ namespace PlacesAPI.DAL
     public interface IPlaceRepository
     {
         IEnumerable<Place> GetAllPlaces();
-        Place GetPlaceById(long id);
+        Place GetPlaceById(Guid id);
         void InsertPlace(Place place);
-        void DeletePlace(long id);
+        void DeletePlace(Guid id);
+        void DeleteAll();
         void SaveChanges();
+        void GetPlacesIasi(string type);
     }
 }

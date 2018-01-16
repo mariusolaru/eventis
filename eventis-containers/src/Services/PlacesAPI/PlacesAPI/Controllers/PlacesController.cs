@@ -23,8 +23,8 @@ namespace PlacesAPI.Controllers
             return _context.GetAllPlaces();
         }
 
-        [HttpGet("{id}", Name = "GetPlaceById")]
-        public IActionResult GetById(long id)
+        [HttpGet("{id:Guid}", Name = "GetPlaceById")]
+        public IActionResult GetById(Guid id)
         {
             var item = _context.GetPlaceById(id);
 
@@ -35,22 +35,22 @@ namespace PlacesAPI.Controllers
             return new ObjectResult(item);
         }
 
-        [HttpPost]
-        public IActionResult Create([FromBody]Place place)
-        {
-            if (place == null)
-            {
-                return BadRequest();
-            }
+        //[HttpPost]
+        //public IActionResult Create([FromBody]Place place)
+        //{
+        //    if (place == null)
+        //    {
+        //        return BadRequest();
+        //    }
 
-            _context.InsertPlace(place);
-            _context.SaveChanges();
+        //    _context.InsertPlace(place);
+        //    _context.SaveChanges();
 
-            return CreatedAtRoute("GetPlaceById", new { id = place.Id }, place);
-        }
+        //    return CreatedAtRoute("GetPlaceById", new { id = place.Id }, place);
+        //}
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        [HttpDelete("{id:Guid}")]
+        public IActionResult Delete(Guid id)
         {
             var place = _context.GetPlaceById(id);
 
@@ -63,6 +63,16 @@ namespace PlacesAPI.Controllers
             _context.SaveChanges();
 
             return new NoContentResult();
+        }
+
+        [HttpGet("/getplaces/{givenType}")]
+        public IActionResult GetPlaces(string givenType)
+        {
+            _context.DeleteAll();
+            _context.GetPlacesIasi(givenType);
+            _context.SaveChanges();
+
+            return Ok();
         }
     }
 }
