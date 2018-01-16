@@ -14,7 +14,11 @@ import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
-  imports: [MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatGridListModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule, MatListModule, MatIconModule],
-  exports: [MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatGridListModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule, MatListModule, MatIconModule]
+  imports: [MatButtonModule, MatInputModule, MatCardModule,
+    MatToolbarModule, MatGridListModule, MatDatepickerModule,
+    MatNativeDateModule, MatPaginatorModule, MatListModule, MatIconModule],
+  exports: [MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule,
+    MatGridListModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule,
+    MatListModule, MatIconModule]
 })
 export class MaterialModule { }

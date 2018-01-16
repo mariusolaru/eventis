@@ -21,10 +21,10 @@ export class HomeComponent implements OnInit {
     // MatPaginator Output
     pageEvent: PageEvent;
 
-    public width =2;
-    public height =1;
+    public width = 2;
+    public height = 1;
 
-    events: <any> = [];
+    events: any = [];
 
     constructor(
       private router: Router,
