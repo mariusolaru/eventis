@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FacebookEvents.API.Controllers
 {
-    [Route("v1/events")]
+    [Route("api/fbevents")]
     public class EventsController : Controller
     {
         private readonly IEventRepository _repository;
@@ -29,10 +29,15 @@ namespace FacebookEvents.API.Controllers
             return Ok(_event);
         }
 
-     
+        
         [HttpGet(Name = "GetEvents")]
-        public IActionResult Get(PagingParams pagingParams)
-        {
+        [HttpGet("{pageNumber}/{pageSize}")]
+        public IActionResult Get(int pageNumber , int pageSize)
+        {   
+            PagingParams pagingParams = new PagingParams();
+            pagingParams.PageNumber = pageNumber;
+            pagingParams.PageSize = pageSize;
+
             var model = _repository.GetEvents(pagingParams);
 
             Response.Headers.Add("X-Pagination", model.GetHeader().ToJson());
@@ -80,6 +85,12 @@ namespace FacebookEvents.API.Controllers
         public IEnumerable<Event> GetAllEventsUntill(Int64 dateTime)
         {
             return _repository.GetEventsUntill(new DateTime(dateTime));
+        }
+
+        [HttpGet("update")]
+        public void UpdateDbWithFbEvents()
+        {
+            _repository.AddAllEventsFromFacebook();
         }
     }
 }
