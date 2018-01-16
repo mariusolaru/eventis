@@ -1,0 +1,22 @@
+.example-card {
+    width: 400px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+.example-card-image{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+  .example-header-image {
+    margin-left : 10px;
+    background-image: url('https://www.modernmom.com/wp-content/uploads/2012/07/Firework-Photography.jpg');
+    background-size: cover;
+  }
