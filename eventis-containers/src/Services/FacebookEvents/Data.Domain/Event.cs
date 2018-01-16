@@ -27,6 +27,9 @@ namespace Data.Domain
         public static Event Create(string location, string facebookId, string name, string description, DateTime startTime, DateTime endTime, string imageUrl)
         {
             //TODO : add defensive coding !
+
+                        
+    
             var instance = new Event
             {
                 Id = Guid.NewGuid()

@@ -13296,26 +13296,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\": {},
+    "C:\\Users\\mariu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookEvents.API\\FacebookEvents.API.csproj",
+      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookEvents.API\\FacebookEvents.API.csproj",
       "projectName": "FacebookEvents.API",
-      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookEvents.API\\FacebookEvents.API.csproj",
-      "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookEvents.API\\obj\\",
+      "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookEvents.API\\FacebookEvents.API.csproj",
+      "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookEvents.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Razvan Romanescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mariu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13328,11 +13325,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj": {
-              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj"
+            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj"
             },
-            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj": {
-              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj"
+            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj": {
+              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj"
             }
           }
         }
@@ -13346,22 +13343,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "[2.0.3, )"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0.0",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.3"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[2.0.1, )"
+            "version": "2.0.1"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "1.1.0"
           }
         },
         "imports": [

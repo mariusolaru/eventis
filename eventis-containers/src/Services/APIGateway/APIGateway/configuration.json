@@ -79,11 +79,11 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/fbEvents",
+      "DownstreamPathTemplate": "/api/fbevents/{pageNumber}/{pageSize}",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 5000,
-      "UpstreamPathTemplate": "/fbEvents",
+      "UpstreamPathTemplate": "/fbevents/{pageNumber}/{pageSize}",
       "UpstreamHttpMethod": [ "Get" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
@@ -92,11 +92,11 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/fbEvents/{dateTime}",
+      "DownstreamPathTemplate": "/api/fbevents/{id}",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 5000,
-      "UpstreamPathTemplate": "/fbEvents/{dateTime}",
+      "UpstreamPathTemplate": "/fbevents/{id}",
       "UpstreamHttpMethod": [ "Get" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,
@@ -105,11 +105,24 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/fbEvents/update",
+      "DownstreamPathTemplate": "/api/fbevents/{dateTime}",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
       "DownstreamPort": 5000,
-      "UpstreamPathTemplate": "/fbEvents/update",
+      "UpstreamPathTemplate": "/fbevents/{dateTime}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/fbevents/update",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 5000,
+      "UpstreamPathTemplate": "/fbevents/update",
       "UpstreamHttpMethod": [ "Get" ],
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3,

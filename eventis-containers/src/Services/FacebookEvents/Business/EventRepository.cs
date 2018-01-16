@@ -86,9 +86,11 @@ namespace Business
                 {
                     eventEndTime = DateTime.Parse(ev.EndTime, null, System.Globalization.DateTimeStyles.RoundtripKind);
                 }
-                var newEvent = Event.Create(ev.Place, ev.FacebookId, ev.Name, ev.Description, eventStartTime, eventEndTime,
-                    ev.Cover.Source);
-                AddEvent(newEvent);
+
+                var newEvent = Event.Create(ev.Place, ev.FacebookId, ev.Name, ev.Description, eventStartTime,
+                        eventEndTime,
+                        ev.Cover.Source);
+                    AddEvent(newEvent);
             }
 
             _databaseContext.SaveChanges();
