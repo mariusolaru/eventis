@@ -1,0 +1,29 @@
+#left {
+  width: 50%;
+  float: left;
+  margin-left: 6%;
+}
+
+#right {
+  margin-left: 50%;
+  text-align: center;
+  padding-right: 17%;
+}
+
+.mat-list {
+  margin: 0 auto;
+  display: table;
+}
+
+.mat-list .mat-list-text {
+  text-align: left !important;
+}
+
+.event-actions {
+  padding-bottom: 0;
+}
+.event-actions .remove-icon {
+  padding-left: 0.5em;
+  color: darkslategrey;
+  cursor: pointer;
+}
