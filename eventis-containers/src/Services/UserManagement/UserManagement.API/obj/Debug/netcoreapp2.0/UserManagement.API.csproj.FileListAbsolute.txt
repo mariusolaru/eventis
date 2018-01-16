@@ -15,3 +15,20 @@ C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\s
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.AssemblyInfo.cs
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.dll
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\UserManagement.API.deps.json
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\UserManagement.API.runtimeconfig.json
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\UserManagement.API.runtimeconfig.dev.json
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\UserManagement.API.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\UserManagement.API.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\Business.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\Data.Domain.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\Data.Persistence.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\Business.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\Data.Domain.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\bin\Debug\netcoreapp2.0\Data.Persistence.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.csprojResolveAssemblyReference.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.csproj.CoreCompileInputs.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.AssemblyInfoInputs.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.AssemblyInfo.cs
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\UserManagement.API\obj\Debug\netcoreapp2.0\UserManagement.API.pdb

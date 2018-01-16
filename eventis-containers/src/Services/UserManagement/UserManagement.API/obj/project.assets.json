@@ -13292,7 +13292,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mariu\\.nuget\\packages\\": {},
+    "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13301,17 +13301,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\UserManagement.API\\UserManagement.API.csproj",
+      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\UserManagement.API\\UserManagement.API.csproj",
       "projectName": "UserManagement.API",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\UserManagement.API\\UserManagement.API.csproj",
-      "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\UserManagement.API\\obj\\",
+      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\UserManagement.API\\UserManagement.API.csproj",
+      "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\UserManagement.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mariu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Razvan Romanescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13324,14 +13324,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj"
+            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj": {
+              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj"
             },
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj"
+            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj": {
+              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj"
             },
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj"
+            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj": {
+              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj"
             }
           }
         }
@@ -13345,22 +13345,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.1"
+            "version": "[2.0.3, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "1.1.0"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.3"
+            "version": "[1.1.0, )"
           }
         },
         "imports": [

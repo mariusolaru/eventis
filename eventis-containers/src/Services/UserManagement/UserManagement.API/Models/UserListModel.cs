@@ -4,7 +4,7 @@ namespace UserManagement.API.Models
 {
     public class UserListModel
     {   
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public string UserEmail { get; set; }
         public string Location { get; set; }
         public string Name { get; set; }

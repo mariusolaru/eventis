@@ -26,7 +26,7 @@ namespace Business
             return _service.UsersList.ToList();
         }
 
-        public UserList GetById(string facebookId)
+        public UserList GetById(Guid facebookId)
         {
             return _service.UsersList.FirstOrDefault(c => c.Id == facebookId);
         }
@@ -42,7 +42,7 @@ namespace Business
             _service.SaveChanges();
         }
 
-        public void Delete(string id)
+        public void Delete(Guid id)
         {
             _service.UsersList.Remove(GetById(id));
             _service.SaveChanges();

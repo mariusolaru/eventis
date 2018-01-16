@@ -9,9 +9,9 @@ namespace Business
         void Add(UserList userList);
         IReadOnlyList<UserList> GetAll();
         IReadOnlyList<UserList> GetAllEventsFromToday();
-        UserList GetById(String id);
+        UserList GetById(Guid id);
         void Edit(UserList userList);
-        void Delete(String id);
+        void Delete(Guid id);
         IReadOnlyList<UserList> GetUserEventsByEmail(string userEmail);
     }
 }

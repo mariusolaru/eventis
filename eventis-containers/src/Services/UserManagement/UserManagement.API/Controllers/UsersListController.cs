@@ -29,15 +29,15 @@ namespace UserManagement.API.Controllers
             {
                 return BadRequest();
             }
-            var entry = Data.Domain.UserList.Create(userList.Id , userList.UserEmail, userList.Location, userList.Name,
+            var entry = Data.Domain.UserList.Create(userList.UserEmail, userList.Location, userList.Name,
                 userList.Description, userList.ImageUrl, userList.EventType , userList.StartTime, userList.EndTime);
             _repository.Add(entry);
 
             return CreatedAtRoute("GetById", new { Id = entry.Id }, entry);
         }
 
-        [HttpGet("{id}", Name = "GetById")]
-        public Data.Domain.UserList GetById(String id)
+        [HttpGet("{id:Guid}", Name = "GetById")]
+        public Data.Domain.UserList GetById(Guid id)
         {
             return _repository.GetById(id);
         }
@@ -48,18 +48,18 @@ namespace UserManagement.API.Controllers
             return _repository.GetAllEventsFromToday();
         }
              
-        [HttpPut("{id}")]
-        public void Put(String id, [FromBody]UserListModel userList)
+        [HttpPut("{id:Guid}")]
+        public void Put(Guid id, [FromBody]UserListModel userList)
         {
             var entity = _repository.GetById(id);
-            entity.Update(userList.Id , userList.UserEmail , userList.Location , userList.Name,
+            entity.Update(userList.UserEmail , userList.Location , userList.Name,
                 userList.Description, userList.ImageUrl , userList.EventType , userList.StartTime, userList.EndTime);
 
             _repository.Edit(entity);
         }
 
-        [HttpDelete("{id}")]
-        public void Delete(String id)
+        [HttpDelete("{id:Guid}")]
+        public void Delete(Guid id)
         {
             _repository.Delete(id);
         }

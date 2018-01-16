@@ -9,7 +9,7 @@ namespace Data.Domain
 
         }
         
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public string UserEmail { get; set; }
         public string Location { get; private set; }
         public string Name { get; private set; }
@@ -19,12 +19,12 @@ namespace Data.Domain
         public DateTime StartTime { get; private set; }
         public DateTime EndTime { get; private set; }
 
-        public static UserList Create(string facebookId , string userEmail , string location, string name,
+        public static UserList Create(string userEmail , string location, string name,
             string description, string imageUrl , string eventType , DateTime startTime, DateTime endTime)
         {
             var instance = new UserList
             {   
-                Id = facebookId,
+                Id = Guid.NewGuid(),
                 UserEmail = userEmail,
                 Location = location,
                 Name = name, 
@@ -38,10 +38,9 @@ namespace Data.Domain
             return instance;
         }
 
-        public void Update(string facebookId , string userEmail, string location, string name,
+        public void Update(string userEmail, string location, string name,
             string description, string imageUrl , string eventType , DateTime startTime, DateTime endTime)
         {
-            this.Id = facebookId;
             this.UserEmail = userEmail;
             this.Location = location;
             this.Name = name;

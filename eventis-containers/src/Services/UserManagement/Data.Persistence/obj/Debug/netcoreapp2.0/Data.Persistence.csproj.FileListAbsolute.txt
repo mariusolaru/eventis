@@ -9,3 +9,14 @@ C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\s
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.AssemblyInfo.cs
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.dll
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Persistence.deps.json
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Persistence.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Persistence.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Domain.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Domain.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.csprojResolveAssemblyReference.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.csproj.CoreCompileInputs.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.AssemblyInfoInputs.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.AssemblyInfo.cs
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.pdb

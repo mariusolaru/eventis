@@ -2793,7 +2793,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mariu\\.nuget\\packages\\": {},
+    "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -2802,17 +2802,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj",
+      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\obj\\",
+      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mariu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Razvan Romanescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2825,11 +2825,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj"
+            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj": {
+              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj"
             },
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj"
+            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj": {
+              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj"
             }
           }
         }
@@ -2846,7 +2846,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },
