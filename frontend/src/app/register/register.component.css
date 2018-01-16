@@ -1,0 +1,44 @@
+form {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form .mat-form-field {
+  width: 100%;
+}
+
+form .mat-raised-button {
+  color: white;
+  background: #3f51b5;
+  width: 50%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+p{
+  color: #919191;
+}

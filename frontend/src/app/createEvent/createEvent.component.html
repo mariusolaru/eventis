@@ -1,0 +1,18 @@
+<h1> Create Event Component works </h1>
+
+
+<form [formGroup]="createEventForm">
+  <mat-form-field>
+    <input matInput type="text" placeholder="Enter a name" formControlName="nameControl">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Enter a description" formControlName="descriptionControl">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dateControl">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</form>
