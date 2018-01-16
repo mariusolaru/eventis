@@ -3565,7 +3565,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mariu\\.nuget\\packages\\": {},
+    "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3574,17 +3574,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj",
+      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj",
       "projectName": "FacebookCrawler",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj",
-      "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\obj\\",
+      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj",
+      "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mariu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Razvan Romanescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3611,12 +3611,12 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "10.0.3"
+            "version": "[10.0.3, )"
           }
         },
         "imports": [
