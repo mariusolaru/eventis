@@ -21,6 +21,7 @@ namespace PlacesAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddDbContext<PlaceContext>(opt => opt.UseInMemoryDatabase("PlacesDB"));
             services.AddScoped<IPlaceRepository, PlaceRepository>();
             services.AddMvc();
@@ -38,6 +39,12 @@ namespace PlacesAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
 
             app.UseSwagger();
 

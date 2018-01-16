@@ -13288,11 +13288,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razvan Romanescu\\source\\repos\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
+      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
       "projectName": "PlacesAPI",
-      "projectPath": "C:\\Users\\Razvan Romanescu\\source\\repos\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
+      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
       "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razvan Romanescu\\source\\repos\\PlacesAPI\\PlacesAPI\\obj\\",
+      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
