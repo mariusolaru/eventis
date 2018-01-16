@@ -15,5 +15,10 @@ namespace Business
         void AddAllEventsFromFacebook();
 
         List<Event> GetEventsUntill(DateTime dateTime);
+
+        PagedList<Event> GetEvents(PagingParams pagingParams);
+
+        Event GetEventById(Guid id);
+
     }
 }

@@ -17,9 +17,20 @@ namespace Business
             _databaseContext = databaseContext;
         }
 
+        public PagedList<Event> GetEvents(PagingParams pagingParams)
+        {
+            var query = _databaseContext.Events.AsQueryable();
+            return new PagedList<Event>(query, pagingParams.PageNumber, pagingParams.PageSize);
+        }
+
         public List<Event> GetAllActiveEvents()
         {
             return _databaseContext.Events.Where(e => e.StartTime > DateTime.Now).ToList();
+        }
+
+        public Event GetEventById(Guid id)
+        {
+            return _databaseContext.Events.FirstOrDefault(e => e.Id == id);
         }
 
         public void AddEvent(Event _event)
