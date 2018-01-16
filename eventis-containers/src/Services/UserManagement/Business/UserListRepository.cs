@@ -47,5 +47,10 @@ namespace Business
             _service.UsersList.Remove(GetById(id));
             _service.SaveChanges();
         }
+
+        public IReadOnlyList<UserList> GetUserEventsByEmail(string userEmail)
+        {
+            return _service.UsersList.Where(e => e.UserEmail.Equals(userEmail)).ToList();
+        }
     }
 }
