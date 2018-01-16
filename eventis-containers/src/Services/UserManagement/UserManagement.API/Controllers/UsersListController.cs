@@ -30,7 +30,7 @@ namespace UserManagement.API.Controllers
                 return BadRequest();
             }
             var entry = Data.Domain.UserList.Create(userList.Id , userList.UserEmail, userList.Location, userList.Name,
-                userList.Description, userList.ImageUrl, userList.StartTime, userList.EndTime);
+                userList.Description, userList.ImageUrl, userList.EventType , userList.StartTime, userList.EndTime);
             _repository.Add(entry);
 
             return CreatedAtRoute("GetById", new { Id = entry.Id }, entry);
@@ -53,7 +53,7 @@ namespace UserManagement.API.Controllers
         {
             var entity = _repository.GetById(id);
             entity.Update(userList.Id , userList.UserEmail , userList.Location , userList.Name,
-                userList.Description, userList.ImageUrl , userList.StartTime, userList.EndTime);
+                userList.Description, userList.ImageUrl , userList.EventType , userList.StartTime, userList.EndTime);
 
             _repository.Edit(entity);
         }
@@ -62,6 +62,12 @@ namespace UserManagement.API.Controllers
         public void Delete(String id)
         {
             _repository.Delete(id);
+        }
+
+        [HttpGet("email/{email}")]
+        public IEnumerable<Data.Domain.UserList> GetUserEventsByUserEmail(string email)
+        {
+            return _repository.GetUserEventsByEmail(email);
         }
     }
 }

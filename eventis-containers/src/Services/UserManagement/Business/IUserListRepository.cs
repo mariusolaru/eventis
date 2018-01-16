@@ -12,5 +12,6 @@ namespace Business
         UserList GetById(String id);
         void Edit(UserList userList);
         void Delete(String id);
+        IReadOnlyList<UserList> GetUserEventsByEmail(string userEmail);
     }
 }
