@@ -2,6 +2,7 @@
 import { User } from '../_models/user';
 import { EventService } from '../_services/index';
 import { Event } from '../_models/event';
+import {PageEvent} from '@angular/material';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
@@ -22,9 +23,8 @@ export class HomeComponent implements OnInit {
 
     public width =2;
     public height =1;
-    public events = [];
 
-    events: Event[] = [];
+    events: any = [];
 
     constructor(
       private router: Router,

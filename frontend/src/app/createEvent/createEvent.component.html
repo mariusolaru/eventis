@@ -1,7 +1,5 @@
-<h1> Create Event Component works </h1>
-
-
-<form [formGroup]="createEventForm">
+<form [formGroup]="createEventForm" (ngSubmit)="createEventForm.valid && onSubmit()" style="width: 100%;">
+  <mat-card-title> {{title}} </mat-card-title>
   <mat-form-field>
     <input matInput type="text" placeholder="Enter a name" formControlName="nameControl">
   </mat-form-field>
@@ -11,8 +9,17 @@
   </mat-form-field>
 
   <mat-form-field>
+    <input matInput type="text" placeholder="Enter a location" formControlName="locationControl">
+  </mat-form-field>
+
+  <mat-form-field>
     <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dateControl">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
+
+  <br>
+  <button mat-raised-button type="submit" >
+    Create
+  </button>
 </form>

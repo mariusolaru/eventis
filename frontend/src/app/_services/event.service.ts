@@ -8,19 +8,17 @@ export class EventService {
 
   constructor(private http: HttpClient) { }
 
-  public getEvents(pageNumber: number, pageSize: number) {
+  public getEvents(pageNumber: any, pageSize: any) {
 
     let Params = new HttpParams();
     Params = Params.append('PageNumber', pageNumber);
     Params = Params.append('PageSize', pageSize);
 
-    return this.http.get(`${APP_CONSTANTS.EVENTS}/v1/events`, {
-      params: Params
-    });
+    return this.http.get(`${APP_CONSTANTS.EVENTS}/api/fbevents/`+pageNumber + '/' + pageSize);
   }
 
-  public getEvent(id: string) {
-    return this.http.get(`${APP_CONSTANTS.EVENTS}/v1/events/` + id);
+  public getEvent(id) {
+    return this.http.get(`${APP_CONSTANTS.EVENTS}/api/fbevents/` + id);
   }
 
 }

@@ -14,9 +14,11 @@ import { AuthGuard } from './_guards/auth.guard';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 
 import { EventService } from './_services/event.service';
+import { MyEventsService } from './_services/myevents.service';
 import { AlertService } from './_services/alert.service';
 import { AuthenticationService } from './_services/authentication.service';
 import { UserService } from './_services/user.service';
+import { LocationsService } from './_services/locations.service';
 //import { AlertService, AuthenticationService, UserService } from './_services/index';
 
 import { HomeComponent } from './home/home.component';
@@ -28,9 +30,13 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { CreateEventComponent } from './createEvent/createEvent.component';
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { MyEventsComponent } from './myEvents/myEvents.component';
+import { LocationCards } from './location-cards/location.card';
+import { LocationComponent } from './locations/location.component';
+import { HomeScreenComponent } from './home-screen/home-screen.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+
 
 
 @NgModule({
@@ -54,14 +60,19 @@ import { MaterialModule } from './material.module';
         NotfoundComponent,
         CreateEventComponent,
         EventDetailsComponent,
-        MyEventsComponent
+        MyEventsComponent,
+        LocationCards,
+        LocationComponent,
+        HomeScreenComponent
     ],
     providers: [
         EventService,
         AuthGuard,
         AlertService,
         AuthenticationService,
+        MyEventsService,
         UserService,
+        LocationsService,
         {
             provide: HTTP_INTERCEPTORS,
             useClass: JwtInterceptor,

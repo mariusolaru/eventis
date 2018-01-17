@@ -58,7 +58,6 @@ export class RegisterComponent {
     register() {
         this.loading = true;
         const user = this.prepareSaveUser();
-        console.log(user);
         this.userService.create(user)
             .subscribe(
                 data => {

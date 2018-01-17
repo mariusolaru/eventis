@@ -1,24 +1,63 @@
+<app-navbar> </app-navbar>
 <div id="left">
   <h2> My Events List </h2>
+    <div style="overflow-y:scroll; overflow-x:hidden; height:452px; margin-bottom: 15px;">
+    <mat-grid-list cols="1" rowHeight="200px" rowWidth="400px">
 
+      <mat-grid-tile *ngFor="let event of events; let i=index" [colspan]="1" [rowspan]="1">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title> {{event.name}} </mat-card-title>
+            <mat-card-subtitle> {{event.location}} </mat-card-subtitle>
 
-    <mat-list-item *ngFor="let event of events">
+            <div class="actions">
+                <button mat-raised-button color="warn" (click)="deleteEvent(i, event.id)"> Delete </button>
+            </div>
 
-    {{event.titlu}}
+          </mat-card-header>
+          <mat-card-content>
+            {{event.startTime | date}}
+          </mat-card-content>
 
-    {{event.data}}
-    {{event.locatie}}
+        </mat-card>
+      </mat-grid-tile>
 
-    <div class="event-actions">
+    </mat-grid-list>
 
-
-    </div>
-
-    </mat-list-item>
-
-
+  </div>
 </div>
 
 <div id="right">
 
+  <button mat-raised-button color="primary" (click)="createEvent()"> Create Event </button>
+
+  <div *ngIf="showCreateEvent">
+
+    <form [formGroup]="createEventForm" (ngSubmit)="createCustomEvent() && createEventForm.valid" style="width: 100%;">
+      <mat-card-title> Create Event </mat-card-title>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Enter a name" formControlName="nameControl">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" placeholder="Enter a description" formControlName="descriptionControl">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" placeholder="Enter a location" formControlName="locationControl">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="dateControl">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <br>
+      <button mat-raised-button type="submit" >
+        Create
+      </button>
+    </form>
+  </div>
 </div>
