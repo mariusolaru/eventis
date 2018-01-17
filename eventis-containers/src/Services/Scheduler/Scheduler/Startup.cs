@@ -1,4 +1,3 @@
-using System.Net;
 using Hangfire;
 using Hangfire.MemoryStorage;
 using Microsoft.AspNetCore.Builder;
@@ -40,11 +39,11 @@ namespace Scheduler
             app.UseStaticFiles();
             
             app.UseHangfireDashboard();
-            //BackgroundJob.Enqueue(() => Console.WriteLine("Fire-and-forget"));
-            //RecurringJob.AddOrUpdate(() => Console.WriteLine("Recurring!"), Cron.Minutely);
 
             Jobs job = new Jobs();
             RecurringJob.AddOrUpdate(() => job.UpdateEvents(), Cron.Daily);
+            RecurringJob.AddOrUpdate(() => job.SendEmailsForToday(), Cron.Daily);
+            RecurringJob.AddOrUpdate(() => job.SendWelcomeEmail(), Cron.Daily);
             app.UseHangfireServer();
 
             app.UseMvc();
