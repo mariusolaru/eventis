@@ -14,7 +14,9 @@
     <mat-card-actions>
       <div class="button-row">
         <button mat-raised-button color="accent" (click)="attend(event)">Attend</button>
-        <button mat-raised-button color="primary">See on Facebook</button>
+        <a href="https://www.facebook.com/events/{{event.facebookId}}" target="_blank">
+          <button mat-raised-button color="primary">See on Facebook</button>
+        </a>
       </div>
     </mat-card-actions>
   </mat-card-content>

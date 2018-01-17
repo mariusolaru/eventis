@@ -17,7 +17,7 @@ export class UserService {
     }
 */
     create(user: User) {
-        return this.http.post(`${APP_CONSTANTS.ENDPOINT}/api/userslog`, user);
+        return this.http.post(`${APP_CONSTANTS.ENDPOINT}/userslog`, user);
     }
 /*
     update(user: User) {

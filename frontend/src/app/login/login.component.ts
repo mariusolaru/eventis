@@ -55,7 +55,9 @@ export class LoginComponent implements OnInit {
     this.authenticationService.login(user.email, user.password)
         .subscribe(
             data => {
-                this.router.navigate([this.returnUrl]);
+                console.log(data);
+                console.log(this.returnUrl);
+                this.router.navigate(['/events']);
             },
             error => {
                 console.log(error);

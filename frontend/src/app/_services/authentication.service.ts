@@ -9,7 +9,7 @@ export class AuthenticationService {
     constructor(private http: HttpClient) { }
 
     login(email: string, password: string) {
-        return this.http.post<any>(`${APP_CONSTANTS.ENDPOINT}/api/userslog/authenticate`, { email: email, password: password })
+        return this.http.post<any>(`${APP_CONSTANTS.ENDPOINT}/userslog/authenticate`, { email: email, password: password })
             .map(user => {
                 // login successful if there's a jwt token in the response
                 console.log(user);

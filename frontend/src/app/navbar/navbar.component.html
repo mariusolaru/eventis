@@ -7,10 +7,10 @@
       <button mat-raised-button class="button-page" color="primary">All Events</button></a>
       <a routerLink="/myevents" routerLinkActive="active">
         <button mat-raised-button class="button-page" color="primary">My Events</button></a>
-        <a routerLink="/location" routerLinkActive="active">
+        <a routerLink="/locations" routerLinkActive="active">
           <button mat-raised-button class="button-page" color="primary"> Locations </button></a>
-        <a routerLink="/home" routerLinkActive="active">
-          <button mat-raised-button class="button-page" color="primary">Log Out</button></a>
+
+          <button mat-raised-button class="button-page" color="primary" (click)="logout()">Log Out</button>
 
 
   </mat-toolbar-row>

@@ -3,5 +3,4 @@ export class CustomEvent {
   description: string;
   location: string;
   startTime: string;
-
 }

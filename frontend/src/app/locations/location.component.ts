@@ -12,7 +12,7 @@ export class LocationComponent {
     private router: Router) { }
 
   goToEventLoc(name: string){
-      this.router.navigateByUrl('location-specific/'+name);
+      this.router.navigateByUrl('locations/'+name);
 //      window.location.reload();
 
   }

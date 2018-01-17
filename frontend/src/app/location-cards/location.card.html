@@ -10,6 +10,10 @@
       <img mat-card-image class="example-card-image" [attr.src]="event.photos">
       <mat-card-content>
         <p>Latitude: {{event.latitude}}</p><p> Longitude: {{event.latitude}}</p>
+        <a href="https://www.google.com/maps/place/{{event.name}}" target="_blank">
+          <img src="assets/images/maps-button.png" height="42" width="42">
+        </a>
+
       </mat-card-content>
     </mat-card>
   </mat-grid-tile>
