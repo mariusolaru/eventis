@@ -79,6 +79,19 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/userslist/email/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 50744,
+      "UpstreamPathTemplate": "/userslist/email/{email}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/fbevents/{pageNumber}/{pageSize}",
       "DownstreamScheme": "http",
       "DownstreamHost": "localhost",
@@ -207,10 +220,89 @@
         "DurationOfBreak": 10,
         "TimeoutValue": 5000
        }
+     },
+     {
+      "DownstreamPathTemplate": "/api/notifications/welcome",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 6300,
+      "UpstreamPathTemplate": "/notifications/welcome",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+       }
+     },
+    {
+      "DownstreamPathTemplate": "/api/notifications/dailymail",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 6300,
+      "UpstreamPathTemplate": "/notifications/dailymail",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+       }
+     },
+    {
+      "DownstreamPathTemplate": "/api/places",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 63988,
+      "UpstreamPathTemplate": "/places",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+       }
+     },
+    {
+      "DownstreamPathTemplate": "/api/places/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 63988,
+      "UpstreamPathTemplate": "/places/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+       }
+     },
+    {
+      "DownstreamPathTemplate": "/api/places/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 63988,
+      "UpstreamPathTemplate": "/places/{id}",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+       }
+     },
+    {
+      "DownstreamPathTemplate": "/api/places/getplaces/{givenType}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 63988,
+      "UpstreamPathTemplate": "/places/getplaces/{givenType}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+       }
      }
     ],
     "GlobalConfiguration": {
       "RequestIdKey": "OcRequestId",
       "AdministrationPath": "/administration"
     }
+
 }
