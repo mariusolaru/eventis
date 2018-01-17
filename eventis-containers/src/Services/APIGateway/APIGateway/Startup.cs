@@ -13,7 +13,7 @@
     public class Startup
     {
         public Startup(IHostingEnvironment env)
-        {
+        {	
             var builder = new Microsoft.Extensions.Configuration.ConfigurationBuilder();
             builder.SetBasePath(env.ContentRootPath)                   
                    .AddJsonFile("configuration.json", optional: false, reloadOnChange: true)
@@ -27,6 +27,12 @@
 
         public void ConfigureServices(IServiceCollection services)
         {
+			services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
             Action<ConfigurationBuilderCachePart> settings = (x) =>
             {
                 x.WithMicrosoftLogging(log =>
@@ -40,6 +46,7 @@
 
         public async void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+			app.UseCors("MyPolicy");
             await app.UseOcelot();
         }
     }

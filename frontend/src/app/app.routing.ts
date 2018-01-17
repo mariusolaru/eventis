@@ -13,18 +13,24 @@ import { NotfoundComponent} from './notfound/notfound.component';
 import {HomeScreenComponent} from './home-screen/home-screen.component'
 
 const appRoutes: Routes = [
-    { path: 'events', component: HomeComponent},
-    { path: 'events/:id', component: EventDetailsComponent},
-    {path: 'location', component: LocationComponent },
-    {path: 'location-specific/:name', component: LocationCards },
+  /*
+    { path: 'location', component: LocationComponent },
     { path: '', component: HomeComponent },
-    { path: 'home', component: HomeScreenComponent},
 
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
     { path: 'myevents', component: MyEventsComponent },
+    */
+    { path: 'home', component: HomeScreenComponent},
+    { path: '', redirectTo : 'home', pathMatch: 'full'},
+    { path: 'login', component: LoginComponent},
+    { path: 'register', component: RegisterComponent},
+    { path: 'events', component: HomeComponent, canActivate: [AuthGuard]},
+    { path: 'events/:id', component: EventDetailsComponent, canActivate: [AuthGuard]},
+    { path: 'locations', component: LocationComponent, canActivate: [AuthGuard]},
+    { path: 'locations/:name', component: LocationCards, canActivate: [AuthGuard]},
+    { path: 'myevents', component: MyEventsComponent, canActivate: [AuthGuard]},
+
     // otherwise redirect to home
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'notfound', pathMatch: 'full' }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);

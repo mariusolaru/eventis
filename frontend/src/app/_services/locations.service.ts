@@ -7,7 +7,7 @@ export class LocationsService {
     constructor(private http: HttpClient) { }
 
     public getAllLocationsForGivenType(type: any) {
-        return this.http.get(`${APP_CONSTANTS.LOCATIONS}/getplaces/` + type);
+        return this.http.get(`${APP_CONSTANTS.ENDPOINT}/places/getplaces/` + type);
     }
 
 }

@@ -3,6 +3,8 @@ import { NgIf } from '@angular/common';
 import { FormControl, Validators} from '@angular/forms';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MyEventsService } from '../_services/myevents.service';
+import { AlertService } from '../_services/alert.service';
+
 
 @Component({
   moduleId: module.id.toString(),
@@ -11,14 +13,13 @@ import { MyEventsService } from '../_services/myevents.service';
 })
 export class MyEventsComponent implements OnInit{
 
-  public showCreateEvent: boolean = false;
-  public childTitle: string;
-  public showUpdateEvent: boolean = false;
-
   createEventForm: FormGroup;
+  loading = false;
 
   public events : any = [];
-  constructor(private fb: FormBuilder, private myEventsService: MyEventsService) {
+  constructor(private fb: FormBuilder,
+    private myEventsService: MyEventsService,
+    private alertService: AlertService) {
 
   }
 
@@ -44,11 +45,13 @@ export class MyEventsComponent implements OnInit{
 
      let event: any = {
        userEmail: currentUser.username,
-       name : formModel.nameControl as string,
        location: formModel.locationControl as string,
+       name : formModel.nameControl as string,
        description: formModel.descriptionControl as string,
-       date : formModel.dateControl as string,
-       eventType : 'custom'
+       imageUrl: 'none',
+       eventType : 'custom',
+       startTime : formModel.dateControl as string,
+       endTime : formModel.dateControl as string
      };
      return event;
    }
@@ -58,33 +61,16 @@ export class MyEventsComponent implements OnInit{
     this.myEventsService.createCustomEvent(event)
       .subscribe(
         data => {
-          console.log(data);
-          console.log(event.date)
           this.events.push(data);
+          this.alertService.success('Event added successfully');
         },
         error => {
           console.log('error');
+          this.alertService.error('There was an error');
         });
 
   }
 
-
-  createEvent() {
-
-    this.childTitle = 'Create Event';
-    if(this.showUpdateEvent == true)
-      this.showUpdateEvent = false;
-
-    this.showCreateEvent = !this.showCreateEvent;
-  }
-
-  updateEvent() {
-    this.childTitle = 'Update Event';
-    if(this.showCreateEvent == true)
-      this.showCreateEvent = false;
-
-    this.showUpdateEvent = !this.showUpdateEvent;
-  }
 
   deleteEvent(index, eventId) {
     //this.events.splice(index, 1);

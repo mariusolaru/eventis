@@ -20,16 +20,10 @@ export class LocationCards implements OnInit {
   }
 
   ngOnInit() {
-
     this.route.params.subscribe( params => {
-    //  this.eventsService.downloadAllLocations(params.name).subscribe((resp: any) => {
-        console.log(params);
         this.eventsService.getAllLocationsForGivenType(params.name).subscribe((resp: any) => {
           this.events = resp;
-          console.log(resp);
         });
       });
-    });
-  }
-
+    };
 }

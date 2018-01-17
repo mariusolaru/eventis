@@ -14,15 +14,15 @@ export class MyEventsService {
   getEventsForUser() {
     let currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
-    return this.http.get(`${APP_CONSTANTS.MYEVENTS}/api/userslist/email/` + currentUser.username);
+    return this.http.get(`${APP_CONSTANTS.ENDPOINT}/userslist/email/` + currentUser.username);
   }
 
   createCustomEvent(event: any) {
-    return this.http.post<any>(`${APP_CONSTANTS.MYEVENTS}/api/userslist`, event);
+    return this.http.post<any>(`${APP_CONSTANTS.ENDPOINT}/userslist`, event);
   }
 
   deleteEvent(id: any) {
-    return this.http.delete(`${APP_CONSTANTS.MYEVENTS}/api/userslist/` + id);
+    return this.http.delete(`${APP_CONSTANTS.ENDPOINT}/userslist/` + id);
   }
 
 

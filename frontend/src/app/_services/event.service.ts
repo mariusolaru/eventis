@@ -14,11 +14,11 @@ export class EventService {
     Params = Params.append('PageNumber', pageNumber);
     Params = Params.append('PageSize', pageSize);
 
-    return this.http.get(`${APP_CONSTANTS.EVENTS}/api/fbevents/`+pageNumber + '/' + pageSize);
+    return this.http.get(`${APP_CONSTANTS.ENDPOINT}/fbevents/`+pageNumber + '/' + pageSize);
   }
 
   public getEvent(id) {
-    return this.http.get(`${APP_CONSTANTS.EVENTS}/api/fbevents/` + id);
+    return this.http.get(`${APP_CONSTANTS.ENDPOINT}/fbevents/` + id);
   }
 
 }
