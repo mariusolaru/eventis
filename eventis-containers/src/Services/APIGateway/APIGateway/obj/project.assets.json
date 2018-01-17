@@ -12885,11 +12885,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\APIGateway\\APIGateway\\APIGateway.csproj",
+      "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\APIGateway\\APIGateway\\APIGateway.csproj",
       "projectName": "APIGateway",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\APIGateway\\APIGateway\\APIGateway.csproj",
+      "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\APIGateway\\APIGateway\\APIGateway.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\APIGateway\\APIGateway\\obj\\",
+      "outputPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\APIGateway\\APIGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

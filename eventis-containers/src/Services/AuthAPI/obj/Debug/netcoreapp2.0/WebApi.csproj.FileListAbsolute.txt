@@ -31,3 +31,14 @@ C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\s
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfo.cs
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.dll
 C:\Users\mariu\Desktop\.NET Laborators\Proiect .NET\eventis\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.pdb
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\bin\Debug\netcoreapp2.0\WebApi.deps.json
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.json
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.dev.json
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\bin\Debug\netcoreapp2.0\WebApi.dll
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\bin\Debug\netcoreapp2.0\WebApi.pdb
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.csprojResolveAssemblyReference.cache
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfoInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfo.cs
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.dll
+D:\Proiect.NET\eventis-containers\src\Services\AuthAPI\obj\Debug\netcoreapp2.0\WebApi.pdb

@@ -4161,9 +4161,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj",
       "projectName": "Data.Persistence",
@@ -4203,15 +4200,15 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "2.0.1"
           }
         },
         "imports": [

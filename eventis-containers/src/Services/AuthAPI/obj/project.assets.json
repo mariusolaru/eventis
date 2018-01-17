@@ -12724,9 +12724,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\AuthAPI\\WebApi.csproj",
       "projectName": "WebApi",
@@ -12762,26 +12759,26 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "1.1.0"
-          },
           "AutoMapper": {
             "target": "Package",
             "version": "6.0.2"
           },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "1.1.0"
           }
         },
         "imports": [
