@@ -18,6 +18,7 @@ import { AlertService } from './_services/alert.service';
 import { AuthenticationService } from './_services/authentication.service';
 import { UserService } from './_services/user.service';
 //import { AlertService, AuthenticationService, UserService } from './_services/index';
+import { LocationsService } from './_services/locations.service';
 
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -28,6 +29,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { CreateEventComponent } from './createEvent/createEvent.component';
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { MyEventsComponent } from './myEvents/myEvents.component';
+import { LocationComponent } from './locations/location.component';
+import { LocationCards } from './location-cards/location.card';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
@@ -56,7 +59,9 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
         CreateEventComponent,
         EventDetailsComponent,
         MyEventsComponent,
-        HomeScreenComponent
+        HomeScreenComponent,
+		    LocationComponent,
+        LocationCards
     ],
     providers: [
         EventService,
@@ -72,6 +77,8 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
 
         // provider used to create fake backend
       //  fakeBackendProvider
+      ,
+	    LocationsService
     ],
     bootstrap: [AppComponent]
 })
