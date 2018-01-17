@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Ensure.That/7.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.0.1": {
         "type": "package",
         "dependencies": {
@@ -681,6 +690,9 @@
       "Data.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Ensure.That": "7.2.1"
+        },
         "compile": {
           "bin/placeholder/Data.Domain.dll": {}
         },
@@ -691,6 +703,21 @@
     }
   },
   "libraries": {
+    "Ensure.That/7.2.1": {
+      "sha512": "lK01JxaJ9AgADW8lHfiUkqxVrh5UZSa+qv8MKddKt2Esmko/jFcM3C50WvC7CEhuYhUQJbhoeNc3HksJyOAZww==",
+      "type": "package",
+      "path": "ensure.that/7.2.1",
+      "files": [
+        "ensure.that.7.2.1.nupkg.sha512",
+        "ensure.that.nuspec",
+        "lib/net451/Ensure.That.dll",
+        "lib/net451/Ensure.That.xml",
+        "lib/netstandard1.1/Ensure.That.dll",
+        "lib/netstandard1.1/Ensure.That.xml",
+        "lib/netstandard2.0/Ensure.That.dll",
+        "lib/netstandard2.0/Ensure.That.xml"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/2.0.1": {
       "sha512": "RlwInZHfIUWwFgQJCpUMKrLeE8QJ64MA/GxD881oTMFa9j7iiGKCtI0xK4J1NNgRKvgVDPJbh9CIGJiu0KEdeA==",
       "type": "package",
@@ -2774,7 +2801,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\": {},
+    "C:\\Users\\mariu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -2783,17 +2810,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj",
+      "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj",
       "projectName": "Data.Persistence",
-      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj",
-      "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\obj\\",
+      "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\Data.Persistence.csproj",
+      "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
+      "outputPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\UserManagement\\Data.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Razvan Romanescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mariu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2806,8 +2833,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj": {
-              "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj"
+            "D:\\Proiect.NET\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj": {
+              "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\UserManagement\\Data.Domain\\Data.Domain.csproj"
             }
           }
         }
@@ -2823,12 +2850,12 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[2.0.1, )"
+            "version": "2.0.1"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0.0",
             "autoReferenced": true
           }
         },

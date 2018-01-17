@@ -20,3 +20,14 @@ D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Per
 D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.AssemblyInfo.cs
 D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.dll
 D:\Work\Projects\eventis\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.pdb
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Persistence.deps.json
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Persistence.dll
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Persistence.pdb
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Domain.dll
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\bin\Debug\netcoreapp2.0\Data.Domain.pdb
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.csprojResolveAssemblyReference.cache
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.csproj.CoreCompileInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.AssemblyInfoInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.AssemblyInfo.cs
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.dll
+D:\Proiect.NET\eventis-containers\src\Services\UserManagement\Data.Persistence\obj\Debug\netcoreapp2.0\Data.Persistence.pdb
