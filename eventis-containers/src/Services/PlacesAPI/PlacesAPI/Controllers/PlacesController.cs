@@ -17,12 +17,6 @@ namespace PlacesAPI.Controllers
             _context = context;
         }
 
-        //[HttpGet]
-        //public IEnumerable<Place> GetAll()
-        //{
-        //    return _context.GetAllPlaces();
-        //}
-
         [HttpGet("{id:Guid}", Name = "GetPlaceById")]
         public IActionResult GetById(Guid id)
         {
@@ -32,22 +26,9 @@ namespace PlacesAPI.Controllers
             {
                 return NotFound();
             }
+
             return new ObjectResult(item);
         }
-
-        //[HttpPost]
-        //public IActionResult Create([FromBody]Place place)
-        //{
-        //    if (place == null)
-        //    {
-        //        return BadRequest();
-        //    }
-
-        //    _context.InsertPlace(place);
-        //    _context.SaveChanges();
-
-        //    return CreatedAtRoute("GetPlaceById", new { id = place.Id }, place);
-        //}
 
         [HttpDelete("{id:Guid}")]
         public IActionResult Delete(Guid id)
