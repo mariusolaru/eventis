@@ -24,8 +24,12 @@ namespace FacebookEvents.API.Controllers
         public IActionResult GetById(Guid id)
         {
             var _event = _repository.GetEventById(id);
+
             if (_event == null)
+            {
                 return NotFound();
+            }
+
             return Ok(_event);
         }
 
@@ -47,6 +51,7 @@ namespace FacebookEvents.API.Controllers
                 Links = GetLinks(model),
                 Items = model.List
             };
+
             return Ok(outputModel);
         }
 
@@ -82,15 +87,22 @@ namespace FacebookEvents.API.Controllers
         }
 
         [HttpGet("{dateTime}")]
-        public IEnumerable<Event> GetAllEventsUntill(Int64 dateTime)
+        public IActionResult GetAllEventsUntill(Int64 dateTime)
         {
-            return _repository.GetEventsUntill(new DateTime(dateTime));
+            if (String.IsNullOrEmpty(dateTime.ToString()))
+            {
+                return BadRequest();
+            }
+
+            return Ok(_repository.GetEventsUntill(new DateTime(dateTime)));
         }
 
         [HttpGet("update")]
-        public void UpdateDbWithFbEvents()
+        public IActionResult UpdateDbWithFbEvents()
         {
             _repository.AddAllEventsFromFacebook();
+
+            return Ok();
         }
     }
 }
