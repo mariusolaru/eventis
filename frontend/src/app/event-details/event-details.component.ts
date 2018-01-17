@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Event } from '../_models/event';
 import { EventService } from '../_services/index';
+import { MyEventsService } from '../_services/myevents.service';
 import {ActivatedRoute} from "@angular/router";
 
 
@@ -25,7 +26,8 @@ export class EventDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private eventService: EventService){
+    private eventService: EventService,
+    private myEventsService : MyEventsService){
   }
 
   ngOnInit() {
@@ -35,6 +37,29 @@ export class EventDetailsComponent implements OnInit {
       }
     );
     });
+  }
+
+  attend(event: any) {
+      let email = JSON.parse(localStorage.getItem('currentUser')).username;
+      console.log(email);
+      let newEvent = {
+        userEmail: email,
+        location: event.location,
+        name: event.name,
+        description: event.description,
+        imageUrl: event.imageUrl,
+        eventType: 'facebook',
+        startTime: event.startTime,
+        endTime: event.endTime
+      }
+      console.log(newEvent.userEmail);
+      this.myEventsService.createCustomEvent(newEvent).subscribe(
+          data => {
+            console.log('success');
+          },
+          error => {
+            console.log('error');
+          });
   }
 
 }

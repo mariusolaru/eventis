@@ -1,3 +1,32 @@
+.example-card {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-height: 450px;
+    overflow: auto;
+  }
+.example-card-image{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.example-header-image {
+  margin-left : 10px;
+  background-image: url('https://www.modernmom.com/wp-content/uploads/2012/07/Firework-Photography.jpg');
+  background-size: cover;
+}
+
+.actions {
+  margin-left: auto;
+}
+
 #left {
   width: 50%;
   float: left;
@@ -7,23 +36,19 @@
 #right {
   margin-left: 50%;
   text-align: center;
-  padding-right: 17%;
+  padding-right: 7%;
+  padding-left: 10%;
 }
 
-.mat-list {
-  margin: 0 auto;
-  display: table;
+.formular{
+  margin: auto;
+  width:100%;
+  padding:10px;
 }
 
-.mat-list .mat-list-text {
-  text-align: left !important;
+.mat-raised-button{
+  margin-top: 20%;
 }
-
-.event-actions {
-  padding-bottom: 0;
-}
-.event-actions .remove-icon {
-  padding-left: 0.5em;
-  color: darkslategrey;
-  cursor: pointer;
+mat-form-field{
+  width: 400px;
 }
