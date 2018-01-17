@@ -42,8 +42,8 @@ namespace Scheduler
 
             Jobs job = new Jobs();
             RecurringJob.AddOrUpdate(() => job.UpdateEvents(), Cron.Daily);
-            RecurringJob.AddOrUpdate(() => job.SendEmailsForToday(), Cron.Daily);
-            RecurringJob.AddOrUpdate(() => job.SendWelcomeEmail(), Cron.Daily);
+            RecurringJob.AddOrUpdate(() => job.SendEmailsForToday(), Cron.Daily(7, 0));
+            //RecurringJob.AddOrUpdate(() => job.SendWelcomeEmail(), Cron.Daily);
             app.UseHangfireServer();
 
             app.UseMvc();

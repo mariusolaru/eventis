@@ -15,7 +15,7 @@ namespace Scheduler
     {
         public void UpdateEvents()
         {
-            string sURL = "http://localhost:51288/v1/events/update";
+            string sURL = "http://localhost:9000/fbevents/update";
 
             WebRequest wrGETURL;
             wrGETURL = WebRequest.Create(sURL);
@@ -29,7 +29,7 @@ namespace Scheduler
             string json = JsonConvert.SerializeObject(emailObject);
             byte[] byteArray = Encoding.UTF8.GetBytes(json);
 
-            WebRequest request = WebRequest.Create("http://localhost:6300/api/notifications/welcome");
+            WebRequest request = WebRequest.Create("http://localhost:9000/notifications/welcome");
             request.Method = "POST";
             request.ContentLength = byteArray.Length;
             request.ContentType = "application/json-patch+json";
@@ -43,7 +43,7 @@ namespace Scheduler
 
         public void SendEmailsForToday()
         {
-            string sURL = "http://localhost:50744/api/userslist/todaysevents";
+            string sURL = "http://localhost:9000/userslist/todaysevents";
 
             WebRequest wrGETURL = WebRequest.Create(sURL);
 
@@ -69,7 +69,7 @@ namespace Scheduler
 
             byte[] byteArray = Encoding.UTF8.GetBytes(json);
 
-            WebRequest request = WebRequest.Create("http://localhost:6300/api/notifications/dailymail");
+            WebRequest request = WebRequest.Create("http://localhost:9000/notifications/dailymail");
             request.Method = "POST";
             request.ContentLength = byteArray.Length;
             request.ContentType = "application/json-patch+json";
