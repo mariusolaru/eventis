@@ -26,6 +26,7 @@ namespace UserManagement.API
 
             var connection = @"Server = .\SQLEXPRESS; Database = UsersList; Trusted_Connection = true;";
 
+            services.AddCors();
             services.AddDbContext<DatabaseContext>(opt => opt.UseSqlServer(connection));
             services.AddMvc();
 
@@ -52,6 +53,12 @@ namespace UserManagement.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
 
             app.UseMvc();
         }
