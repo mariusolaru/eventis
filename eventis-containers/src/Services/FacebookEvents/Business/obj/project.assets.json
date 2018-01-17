@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Ensure.That/7.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1029,6 +1038,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Ensure.That": "7.2.1",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
@@ -1068,6 +1078,21 @@
     }
   },
   "libraries": {
+    "Ensure.That/7.2.1": {
+      "sha512": "lK01JxaJ9AgADW8lHfiUkqxVrh5UZSa+qv8MKddKt2Esmko/jFcM3C50WvC7CEhuYhUQJbhoeNc3HksJyOAZww==",
+      "type": "package",
+      "path": "ensure.that/7.2.1",
+      "files": [
+        "ensure.that.7.2.1.nupkg.sha512",
+        "ensure.that.nuspec",
+        "lib/net451/Ensure.That.dll",
+        "lib/net451/Ensure.That.xml",
+        "lib/netstandard1.1/Ensure.That.dll",
+        "lib/netstandard1.1/Ensure.That.xml",
+        "lib/netstandard2.0/Ensure.That.dll",
+        "lib/netstandard2.0/Ensure.That.xml"
+      ]
+    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -4174,12 +4199,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj",
+      "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj",
+      "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\obj\\",
+      "outputPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4198,14 +4226,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj"
+            "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj": {
+              "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj"
             },
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj"
+            "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj": {
+              "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Persistence\\Data.Persistence.csproj"
             },
-            "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj": {
-              "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj"
+            "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj": {
+              "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\FacebookCrawler\\FacebookCrawler.csproj"
             }
           }
         }

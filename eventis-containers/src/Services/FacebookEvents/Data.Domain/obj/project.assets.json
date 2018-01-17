@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Ensure.That/7.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -825,6 +834,21 @@
     }
   },
   "libraries": {
+    "Ensure.That/7.2.1": {
+      "sha512": "lK01JxaJ9AgADW8lHfiUkqxVrh5UZSa+qv8MKddKt2Esmko/jFcM3C50WvC7CEhuYhUQJbhoeNc3HksJyOAZww==",
+      "type": "package",
+      "path": "ensure.that/7.2.1",
+      "files": [
+        "ensure.that.7.2.1.nupkg.sha512",
+        "ensure.that.nuspec",
+        "lib/net451/Ensure.That.dll",
+        "lib/net451/Ensure.That.xml",
+        "lib/netstandard1.1/Ensure.That.dll",
+        "lib/netstandard1.1/Ensure.That.xml",
+        "lib/netstandard2.0/Ensure.That.dll",
+        "lib/netstandard2.0/Ensure.That.xml"
+      ]
+    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -3560,6 +3584,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Ensure.That >= 7.2.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3"
     ]
@@ -3574,11 +3599,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj",
+      "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj",
       "projectName": "Data.Domain",
-      "projectPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj",
+      "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\Data.Domain.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mariu\\Desktop\\.NET Laborators\\Proiect .NET\\eventis\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\obj\\",
+      "outputPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Data.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3613,6 +3638,10 @@
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
+          },
+          "Ensure.That": {
+            "target": "Package",
+            "version": "7.2.1"
           },
           "Newtonsoft.Json": {
             "target": "Package",

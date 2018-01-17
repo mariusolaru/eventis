@@ -16,3 +16,12 @@ D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\Data.Dom
 D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\Data.Domain\bin\Debug\netcoreapp2.0\Data.Domain.deps.json
 D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\Data.Domain\bin\Debug\netcoreapp2.0\Data.Domain.dll
 D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\Data.Domain\bin\Debug\netcoreapp2.0\Data.Domain.pdb
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\bin\Debug\netcoreapp2.0\Data.Domain.deps.json
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\bin\Debug\netcoreapp2.0\Data.Domain.dll
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\bin\Debug\netcoreapp2.0\Data.Domain.pdb
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.csprojResolveAssemblyReference.cache
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.csproj.CoreCompileInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.AssemblyInfoInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.AssemblyInfo.cs
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.dll
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\Data.Domain\obj\Debug\netcoreapp2.0\Data.Domain.pdb

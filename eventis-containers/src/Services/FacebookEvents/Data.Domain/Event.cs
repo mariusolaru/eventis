@@ -1,4 +1,5 @@
 ﻿using System;
+using EnsureThat;
 
 namespace Data.Domain
 {
@@ -26,20 +27,34 @@ namespace Data.Domain
 
         public static Event Create(string location, string facebookId, string name, string description, DateTime startTime, DateTime endTime, string imageUrl)
         {
-            //TODO : add defensive coding !
-
-                        
+            EnsureArg.IsNotNullOrEmpty(location);
+            EnsureArg.IsNotNullOrEmpty(facebookId);
+            EnsureArg.IsNotNullOrEmpty(name);
+            EnsureArg.IsNotNullOrEmpty(description);
+            EnsureArg.IsDateTime(startTime);
+            EnsureArg.IsDateTime(endTime);
+            EnsureArg.IsNotNullOrEmpty(imageUrl);
     
             var instance = new Event
             {
                 Id = Guid.NewGuid()
             };
+
             instance.Update(location, facebookId, name, description, startTime, endTime, imageUrl);
+
             return instance;
         }
 
         public void Update(string location, string facebookId, string name, string description, DateTime startTime, DateTime endTime, string imageUrl)
         {
+            EnsureArg.IsNotNullOrEmpty(location);
+            EnsureArg.IsNotNullOrEmpty(facebookId);
+            EnsureArg.IsNotNullOrEmpty(name);
+            EnsureArg.IsNotNullOrEmpty(description);
+            EnsureArg.IsDateTime(startTime);
+            EnsureArg.IsDateTime(endTime);
+            EnsureArg.IsNotNullOrEmpty(imageUrl);
+
             this.Location = location;
             this.FacebookId = facebookId;
             this.Name = name;
@@ -48,7 +63,6 @@ namespace Data.Domain
             this.EndTime = endTime;
             this.StartTime = startTime;
             this.EndTime = endTime;
-
             this.ImageUrl = imageUrl;
         }
     }
