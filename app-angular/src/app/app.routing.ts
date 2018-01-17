@@ -9,10 +9,14 @@ import { MyEventsComponent } from './myEvents/myEvents.component';
 import {HomeScreenComponent} from './home-screen/home-screen.component';
 import {NotfoundComponent} from './notfound/notfound.component';
 import { AuthGuard } from './_guards/index';
+import { LocationComponent } from './locations/location.component';
+import { LocationCards } from './location-cards/location.card';
 
 const appRoutes: Routes = [
     { path: 'events', component: HomeComponent},
     { path: 'events/:id', component: EventDetailsComponent},
+    {path: 'location', component: LocationComponent },
+    {path: 'location-specific/:name', component: LocationCards },
     //{ path: '', component: HomeComponent, canActivate: [AuthGuard] },
     { path: '', component: HomeScreenComponent },
     { path: 'login', component: LoginComponent },
