@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Ensure.That/7.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ensure.That.dll": {}
+        }
+      },
       "GoogleApi/3.2.13": {
         "type": "package",
         "dependencies": {
@@ -5097,6 +5106,21 @@
     }
   },
   "libraries": {
+    "Ensure.That/7.2.1": {
+      "sha512": "lK01JxaJ9AgADW8lHfiUkqxVrh5UZSa+qv8MKddKt2Esmko/jFcM3C50WvC7CEhuYhUQJbhoeNc3HksJyOAZww==",
+      "type": "package",
+      "path": "ensure.that/7.2.1",
+      "files": [
+        "ensure.that.7.2.1.nupkg.sha512",
+        "ensure.that.nuspec",
+        "lib/net451/Ensure.That.dll",
+        "lib/net451/Ensure.That.xml",
+        "lib/netstandard1.1/Ensure.That.dll",
+        "lib/netstandard1.1/Ensure.That.xml",
+        "lib/netstandard2.0/Ensure.That.dll",
+        "lib/netstandard2.0/Ensure.That.xml"
+      ]
+    },
     "GoogleApi/3.2.13": {
       "sha512": "87TEHQUNs9Jpk1z2KRPw+II1TxNkcKzBpEcuVdXrRfZcKfYkydFyenysSvBEy+rnG08e0SOxuHTqqWyiedqljg==",
       "type": "package",
@@ -13270,6 +13294,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Ensure.That >= 7.2.1",
       "GoogleApi >= 3.2.13",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.EntityFrameworkCore >= 2.0.1",
@@ -13279,7 +13304,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\": {},
+    "C:\\Users\\mariu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13288,17 +13313,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
+      "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
       "projectName": "PlacesAPI",
-      "projectPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
-      "packagesPath": "C:\\Users\\Razvan Romanescu\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\Projects\\eventis\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\obj\\",
+      "projectPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
+      "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
+      "outputPath": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Razvan Romanescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mariu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13322,30 +13347,34 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "GoogleApi": {
-            "target": "Package",
-            "version": "[3.2.13, )"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "[2.0.5, )"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[2.0.1, )"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "[2.0.0, )",
-            "autoReferenced": true
+            "version": "2.0.1"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[2.0.2, )"
+            "version": "2.0.2"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "2.0.0",
+            "autoReferenced": true
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "1.1.0"
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.5"
+          },
+          "Ensure.That": {
+            "target": "Package",
+            "version": "7.2.1"
+          },
+          "GoogleApi": {
+            "target": "Package",
+            "version": "3.2.13"
           }
         },
         "imports": [

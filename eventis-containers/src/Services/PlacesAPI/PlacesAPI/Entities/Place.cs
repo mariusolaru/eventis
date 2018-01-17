@@ -1,4 +1,5 @@
 ﻿using System;
+using EnsureThat;
 
 namespace PlacesAPI.Entities
 {
@@ -12,11 +13,15 @@ namespace PlacesAPI.Entities
         public double Rating { get; set; }
         public string Address { get; set; }
         public string Photos { get; set; }
-        //public string Types { get; set; }
 
         public Place Create(string placeId, string name, double latitude, double longitude, double rating,
             string address, string photos)
         {
+            EnsureArg.IsNotNullOrEmpty(placeId);
+            EnsureArg.IsNotNullOrEmpty(name);
+            EnsureArg.IsNotNullOrEmpty(address);
+            EnsureArg.IsNotNullOrEmpty(photos);
+
             var instance = new Place {Id = Guid.NewGuid()};
             instance.Update(placeId, name, latitude, longitude, rating, address, photos);
 
@@ -26,6 +31,11 @@ namespace PlacesAPI.Entities
         public void Update(string placeId, string name, double latitude, double longitude, double rating,
             string address, string photos)
         {
+            EnsureArg.IsNotNullOrEmpty(placeId);
+            EnsureArg.IsNotNullOrEmpty(name);
+            EnsureArg.IsNotNullOrEmpty(address);
+            EnsureArg.IsNotNullOrEmpty(photos);
+
             PlaceId = placeId;
             Name = name;
             Latitude = latitude;
