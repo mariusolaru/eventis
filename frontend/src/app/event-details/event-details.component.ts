@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Event } from '../_models/event';
 import { EventService } from '../_services/index';
 import { MyEventsService } from '../_services/myevents.service';
-import {ActivatedRoute} from "@angular/router";
-
+import {ActivatedRoute} from '@angular/router';
+import { SnackBarService } from '../_services/snackbar.service';
 
 @Component({
   selector: 'app-event-details',
@@ -27,7 +27,9 @@ export class EventDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private eventService: EventService,
-    private myEventsService : MyEventsService){
+    private myEventsService : MyEventsService,
+    private snackBarService : SnackBarService
+    ){
   }
 
   ngOnInit() {
@@ -41,7 +43,6 @@ export class EventDetailsComponent implements OnInit {
 
   attend(event: any) {
       let email = JSON.parse(localStorage.getItem('currentUser')).username;
-      console.log(email);
       let newEvent = {
         userEmail: email,
         location: event.location,
@@ -52,13 +53,12 @@ export class EventDetailsComponent implements OnInit {
         startTime: event.startTime,
         endTime: event.endTime
       }
-      console.log(newEvent.userEmail);
       this.myEventsService.createCustomEvent(newEvent).subscribe(
           data => {
-            console.log('success');
+            this.snackBarService.showSnackBar('Successfully Added');
           },
           error => {
-            console.log('error');
+            this.snackBarService.showSnackBar('There was an error');
           });
   }
 

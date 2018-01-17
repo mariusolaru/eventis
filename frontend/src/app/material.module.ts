@@ -11,10 +11,12 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 @NgModule({
-  imports: [MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatGridListModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule, MatListModule, MatIconModule],
-  exports: [MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatGridListModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule, MatListModule, MatIconModule]
+  imports: [MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatGridListModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule, MatListModule, MatIconModule, MatSnackBarModule],
+  exports: [MatButtonModule, MatInputModule, MatCardModule, MatToolbarModule, MatGridListModule, MatDatepickerModule, MatNativeDateModule, MatPaginatorModule, MatListModule, MatIconModule, MatSnackBarModule]
 })
 export class MaterialModule { }
