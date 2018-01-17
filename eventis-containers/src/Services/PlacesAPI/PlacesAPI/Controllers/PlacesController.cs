@@ -46,7 +46,7 @@ namespace PlacesAPI.Controllers
             return new NoContentResult();
         }
 
-        [HttpGet("/getplaces/{givenType}")]
+        [HttpGet("getplaces/{givenType}")]
         public IEnumerable<Place> GetPlaces(string givenType)
         {
             _context.DeleteAll();
