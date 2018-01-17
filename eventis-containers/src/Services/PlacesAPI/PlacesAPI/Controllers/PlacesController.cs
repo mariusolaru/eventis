@@ -7,7 +7,7 @@ using PlacesAPI.Entities;
 namespace PlacesAPI.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Places")]
+    [Route("api/places")]
     public class PlacesController : Controller
     {
         private IPlaceRepository _context;
