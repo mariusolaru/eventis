@@ -17,9 +17,9 @@ namespace UserManagement.API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Data.Domain.UserList> Get()
+        public IActionResult Get()
         {
-            return _repository.GetAll();
+            return Ok(_repository.GetAll());
         }
 
         [HttpPost]
@@ -37,37 +37,64 @@ namespace UserManagement.API.Controllers
         }
 
         [HttpGet("{id:Guid}", Name = "GetById")]
-        public Data.Domain.UserList GetById(Guid id)
+        public IActionResult GetById(Guid id)
         {
-            return _repository.GetById(id);
+            return Ok(_repository.GetById(id));
         }
 
         [HttpGet("todaysevents")]
-        public IEnumerable<Data.Domain.UserList> GetAllEventsFromToday()
+        public IActionResult GetAllEventsFromToday()
         {
-            return _repository.GetAllEventsFromToday();
+            return Ok(_repository.GetAllEventsFromToday());
         }
              
         [HttpPut("{id:Guid}")]
-        public void Put(Guid id, [FromBody]UserListModel userList)
+        public IActionResult Put(Guid id, [FromBody]UserListModel userList)
         {
+            if (userList == null)
+            {
+                return BadRequest();
+            }
+
             var entity = _repository.GetById(id);
+
+            if (entity == null)
+            {
+                return NotFound();
+            }
+
             entity.Update(userList.UserEmail , userList.Location , userList.Name,
                 userList.Description, userList.ImageUrl , userList.EventType , userList.StartTime, userList.EndTime);
 
             _repository.Edit(entity);
+
+            return Ok(entity);
         }
 
         [HttpDelete("{id:Guid}")]
-        public void Delete(Guid id)
+        public IActionResult Delete(Guid id)
         {
+            var entity = _repository.GetById(id);
+
+            if (entity == null)
+            {
+                return NotFound();
+            }
+
             _repository.Delete(id);
+
+            return NoContent();
         }
 
         [HttpGet("email/{email}")]
-        public IEnumerable<Data.Domain.UserList> GetUserEventsByUserEmail(string email)
+        public IActionResult GetUserEventsByUserEmail(string email)
         {
-            return _repository.GetUserEventsByEmail(email);
+            if (String.IsNullOrEmpty(email))
+            {
+                return BadRequest();
+            }
+
+            return Ok(_repository.GetUserEventsByEmail(email));
         }
     }
 }

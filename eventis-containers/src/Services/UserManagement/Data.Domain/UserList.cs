@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
+using EnsureThat;
 
 namespace Data.Domain
 {
@@ -22,6 +24,15 @@ namespace Data.Domain
         public static UserList Create(string userEmail , string location, string name,
             string description, string imageUrl , string eventType , DateTime startTime, DateTime endTime)
         {
+            EnsureArg.IsNotNullOrEmpty(userEmail);
+            EnsureArg.IsNotNullOrEmpty(location);
+            EnsureArg.IsNotNullOrEmpty(name);
+            EnsureArg.IsNotNullOrEmpty(description);
+            EnsureArg.IsNotNullOrEmpty(imageUrl);
+            EnsureArg.IsNotNullOrEmpty(eventType);
+            EnsureArg.IsDateTime(startTime);
+            EnsureArg.IsDateTime(endTime);
+
             var instance = new UserList
             {   
                 Id = Guid.NewGuid(),
@@ -41,6 +52,15 @@ namespace Data.Domain
         public void Update(string userEmail, string location, string name,
             string description, string imageUrl , string eventType , DateTime startTime, DateTime endTime)
         {
+            EnsureArg.IsNotNullOrEmpty(userEmail);
+            EnsureArg.IsNotNullOrEmpty(location);
+            EnsureArg.IsNotNullOrEmpty(name);
+            EnsureArg.IsNotNullOrEmpty(description);
+            EnsureArg.IsNotNullOrEmpty(imageUrl);
+            EnsureArg.IsNotNullOrEmpty(eventType);
+            EnsureArg.IsDateTime(startTime);
+            EnsureArg.IsDateTime(endTime);
+
             this.UserEmail = userEmail;
             this.Location = location;
             this.Name = name;

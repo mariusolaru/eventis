@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using Data.Domain;
 using Data.Persistence;
@@ -40,6 +41,7 @@ namespace Business
         {
             _service.UsersList.Update(userList);
             _service.SaveChanges();
+            
         }
 
         public void Delete(Guid id)
