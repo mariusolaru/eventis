@@ -49,8 +49,8 @@ export class HomeComponent implements OnInit {
 
     getServerData(event? : PageEvent) {
       console.log(event.pageIndex);
-      if(event.pageIndex == 0) {
-        event.pageIndex = 1;
+      if(event.pageIndex == 0 || event.pageIndex == 1) {
+        event.pageIndex += 1;
       }
       this.initEvents(event.pageIndex, event.pageSize);
     }

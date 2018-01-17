@@ -4,6 +4,7 @@ import { FormControl, Validators} from '@angular/forms';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MyEventsService } from '../_services/myevents.service';
 import { AlertService } from '../_services/alert.service';
+import { SnackBarService } from '../_services/snackbar.service';
 
 
 @Component({
@@ -19,8 +20,8 @@ export class MyEventsComponent implements OnInit{
   public events : any = [];
   constructor(private fb: FormBuilder,
     private myEventsService: MyEventsService,
-    private alertService: AlertService) {
-
+    private alertService: AlertService,
+    private snackBarService: SnackBarService) {
   }
 
   ngOnInit() {
@@ -62,11 +63,10 @@ export class MyEventsComponent implements OnInit{
       .subscribe(
         data => {
           this.events.push(data);
-          this.alertService.success('Event added successfully');
+          this.snackBarService.showSnackBar('Created Event Succesfully !')
         },
         error => {
-          console.log('error');
-          this.alertService.error('There was an error');
+          this.snackBarService.showSnackBar('There was an error');
         });
 
   }
@@ -74,14 +74,14 @@ export class MyEventsComponent implements OnInit{
 
   deleteEvent(index, eventId) {
     //this.events.splice(index, 1);
-
     console.log(eventId);
     this.myEventsService.deleteEvent(eventId).subscribe(
       data => {
+        this.snackBarService.showSnackBar('Deleted Event Succesfully !')
         this.events.splice(index, 1);
       },
       error => {
-        console.log('error');
+        this.snackBarService.showSnackBar('There was an error!')
       });
   }
 

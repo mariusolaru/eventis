@@ -19,6 +19,7 @@ import { AlertService } from './_services/alert.service';
 import { AuthenticationService } from './_services/authentication.service';
 import { UserService } from './_services/user.service';
 import { LocationsService } from './_services/locations.service';
+import { SnackBarService } from './_services/snackbar.service';
 //import { AlertService, AuthenticationService, UserService } from './_services/index';
 
 import { HomeComponent } from './home/home.component';
@@ -72,6 +73,7 @@ import { MaterialModule } from './material.module';
         AuthenticationService,
         MyEventsService,
         UserService,
+        SnackBarService,
         LocationsService,
         {
             provide: HTTP_INTERCEPTORS,
