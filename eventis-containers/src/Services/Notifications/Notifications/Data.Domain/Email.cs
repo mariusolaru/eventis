@@ -6,6 +6,7 @@ using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Text;
+using EnsureThat;
 
 namespace Data.Domain
 {
@@ -88,6 +89,12 @@ namespace Data.Domain
 
         public static string CreateDailyMailHtmlComponent(string eventName, string eventLocation, string imageUrl , string startTime, string endTime)
         {
+            EnsureArg.IsNotNullOrEmpty(eventName);
+            EnsureArg.IsNotNullOrEmpty(eventLocation);
+            EnsureArg.IsNotNullOrEmpty(imageUrl);
+            EnsureArg.IsNotNullOrEmpty(startTime);
+            EnsureArg.IsNotNullOrEmpty(endTime);
+
             string htmlComponent = "";
 
             htmlComponent += "<div class=\"grid-grid\">";
