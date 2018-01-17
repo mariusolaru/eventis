@@ -17,11 +17,11 @@ namespace PlacesAPI.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public IEnumerable<Place> GetAll()
-        {
-            return _context.GetAllPlaces();
-        }
+        //[HttpGet]
+        //public IEnumerable<Place> GetAll()
+        //{
+        //    return _context.GetAllPlaces();
+        //}
 
         [HttpGet("{id:Guid}", Name = "GetPlaceById")]
         public IActionResult GetById(Guid id)
@@ -66,13 +66,13 @@ namespace PlacesAPI.Controllers
         }
 
         [HttpGet("/getplaces/{givenType}")]
-        public IActionResult GetPlaces(string givenType)
+        public IEnumerable<Place> GetPlaces(string givenType)
         {
             _context.DeleteAll();
             _context.GetPlacesIasi(givenType);
             _context.SaveChanges();
 
-            return Ok();
+            return _context.GetAllPlaces();
         }
     }
 }

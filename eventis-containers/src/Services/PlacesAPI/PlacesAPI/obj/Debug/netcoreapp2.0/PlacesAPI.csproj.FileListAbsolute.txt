@@ -9,3 +9,14 @@ C:\Users\Razvan Romanescu\source\repos\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2
 C:\Users\Razvan Romanescu\source\repos\PlacesAPI\PlacesAPI\bin\Debug\netcoreapp2.0\PlacesAPI.pdb
 C:\Users\Razvan Romanescu\source\repos\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.dll
 C:\Users\Razvan Romanescu\source\repos\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\bin\Debug\netcoreapp2.0\PlacesAPI.deps.json
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\bin\Debug\netcoreapp2.0\PlacesAPI.runtimeconfig.json
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\bin\Debug\netcoreapp2.0\PlacesAPI.runtimeconfig.dev.json
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\bin\Debug\netcoreapp2.0\PlacesAPI.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\bin\Debug\netcoreapp2.0\PlacesAPI.pdb
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.csprojResolveAssemblyReference.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.csproj.CoreCompileInputs.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.AssemblyInfoInputs.cache
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.AssemblyInfo.cs
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.dll
+D:\Work\Projects\eventis\eventis-containers\src\Services\PlacesAPI\PlacesAPI\obj\Debug\netcoreapp2.0\PlacesAPI.pdb
