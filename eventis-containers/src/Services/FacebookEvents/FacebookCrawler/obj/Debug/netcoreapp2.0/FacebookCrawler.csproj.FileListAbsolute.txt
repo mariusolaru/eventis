@@ -16,3 +16,12 @@ D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\Facebook
 D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.AssemblyInfo.cs
 D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.dll
 D:\Work\Projects\eventis\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.pdb
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\bin\Debug\netcoreapp2.0\FacebookCrawler.deps.json
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\bin\Debug\netcoreapp2.0\FacebookCrawler.dll
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\bin\Debug\netcoreapp2.0\FacebookCrawler.pdb
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.csprojResolveAssemblyReference.cache
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.csproj.CoreCompileInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.AssemblyInfoInputs.cache
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.AssemblyInfo.cs
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.dll
+D:\Proiect.NET\eventis-containers\src\Services\FacebookEvents\FacebookCrawler\obj\Debug\netcoreapp2.0\FacebookCrawler.pdb

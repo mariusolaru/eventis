@@ -4199,9 +4199,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\FacebookEvents\\Business\\Business.csproj",
       "projectName": "Business",

@@ -13309,9 +13309,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "D:\\Proiect.NET\\eventis-containers\\src\\Services\\PlacesAPI\\PlacesAPI\\PlacesAPI.csproj",
       "projectName": "PlacesAPI",
@@ -13347,26 +13344,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "2.0.1"
-          },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "2.0.2"
-          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
-          },
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "1.1.0"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.5"
           },
           "Ensure.That": {
             "target": "Package",
@@ -13375,6 +13356,22 @@
           "GoogleApi": {
             "target": "Package",
             "version": "3.2.13"
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.5"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "2.0.1"
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "2.0.2"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "1.1.0"
           }
         },
         "imports": [
